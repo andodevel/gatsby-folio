@@ -420,7 +420,7 @@ table {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-size: 1rem;
-  line-height: 1.45rem;
+  line-height: 1.45;
   border-collapse: collapse;
   width: 100%;
 }
@@ -542,15 +542,15 @@ li > p {
 }
 code {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  line-height: 1.45;
 }
 kbd {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  line-height: 1.45;
 }
 samp {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  line-height: 1.45;
 }
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -607,7 +607,7 @@ code:before,
 code:after,
 tt:before,
 tt:after {
-  letter-spacing: -0.2em;
+  letter-spacing: -0.2;
   content: " ";
 }
 pre code:before,

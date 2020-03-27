@@ -11,7 +11,7 @@ const IndexPage = () => (
     <h1>Hi, my name is</h1>
     <p>An Do</p>
     <p>A full-stack Java developer with passion of building thing</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `30rem`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     <Link to="/page-2/">Next page</Link>
