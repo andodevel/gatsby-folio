@@ -29,7 +29,7 @@ const Colors = {
   gray2: '#928374',
   gray3: '#928374',
   orange1: '#d65d0e',
-  orange2: '#fe8019'
+  orange2: '#fe8019',
 };
 
 export default Colors;

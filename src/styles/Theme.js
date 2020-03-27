@@ -1,4 +1,4 @@
-import Colors from './Colors'
+import Colors from './Colors';
 
 const Theme = {
   colors: {
@@ -10,9 +10,11 @@ const Theme = {
   },
 
   fonts: {
-    Hack:'Hack, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial, sans-serif',
-    HackMono:'Hack Mono, Roboto Mono, monospace',
-    Monofur: 'Monofur, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial, sans-serif',
+    Hack:
+      'Hack, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial, sans-serif',
+    HackMono: 'Hack Mono, Roboto Mono, monospace',
+    Monofur:
+      'Monofur, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial, sans-serif',
     MonofurMono: 'Monofur Mono, Roboto Mono, monospace',
   },
 

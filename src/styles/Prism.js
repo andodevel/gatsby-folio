@@ -16,7 +16,6 @@ const prismColors = {
   comment: `#8695b799`,
 };
 
-
 const Prism = css`
   .gatsby-highlight {
     background-color: ${prismColors.bg};
@@ -30,8 +29,8 @@ const Prism = css`
     font-size: ${fontSizes.md};
   }
 
-  .gatsby-highlight code[class*='language-'],
-  .gatsby-highlight pre[class*='language-'] {
+  .gatsby-highlight code[class*="language-"],
+  .gatsby-highlight pre[class*="language-"] {
     height: auto !important;
     font-size: ${fontSizes.sm};
     line-height: 1.5;
@@ -43,7 +42,7 @@ const Prism = css`
     hyphens: none;
   }
 
-  .gatsby-highlight pre[class*='language-'] {
+  .gatsby-highlight pre[class*="language-"] {
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -83,7 +82,7 @@ const Prism = css`
   }
 
   /* Language badges */
-  .gatsby-highlight pre[class*='language-']::before {
+  .gatsby-highlight pre[class*="language-"]::before {
     background: ${colors.mediumGrey};
     color: ${colors.offWhite};
     font-size: ${fontSizes.xs};
@@ -97,54 +96,54 @@ const Prism = css`
     left: 1.25rem;
     padding: 0.25rem 0.5rem;
   }
-  .gatsby-highlight pre[class='language-javascript']::before {
-    content: 'js';
+  .gatsby-highlight pre[class="language-javascript"]::before {
+    content: "js";
   }
-  .gatsby-highlight pre[class='language-js']::before {
-    content: 'js';
+  .gatsby-highlight pre[class="language-js"]::before {
+    content: "js";
   }
-  .gatsby-highlight pre[class='language-jsx']::before {
-    content: 'jsx';
+  .gatsby-highlight pre[class="language-jsx"]::before {
+    content: "jsx";
   }
-  .gatsby-highlight pre[class='language-graphql']::before {
-    content: 'GraphQL';
+  .gatsby-highlight pre[class="language-graphql"]::before {
+    content: "GraphQL";
   }
-  .gatsby-highlight pre[class='language-html']::before {
-    content: 'html';
+  .gatsby-highlight pre[class="language-html"]::before {
+    content: "html";
   }
-  .gatsby-highlight pre[class='language-css']::before {
-    content: 'css';
+  .gatsby-highlight pre[class="language-css"]::before {
+    content: "css";
   }
-  .gatsby-highlight pre[class='language-mdx']::before {
-    content: 'mdx';
+  .gatsby-highlight pre[class="language-mdx"]::before {
+    content: "mdx";
   }
-  .gatsby-highlight pre[class='language-shell']::before {
-    content: 'shell';
+  .gatsby-highlight pre[class="language-shell"]::before {
+    content: "shell";
   }
-  .gatsby-highlight pre[class='language-sh']::before {
-    content: 'sh';
+  .gatsby-highlight pre[class="language-sh"]::before {
+    content: "sh";
   }
-  .gatsby-highlight pre[class='language-bash']::before {
-    content: 'bash';
+  .gatsby-highlight pre[class="language-bash"]::before {
+    content: "bash";
   }
-  .gatsby-highlight pre[class='language-yaml']::before {
-    content: 'yaml';
+  .gatsby-highlight pre[class="language-yaml"]::before {
+    content: "yaml";
   }
-  .gatsby-highlight pre[class='language-markdown']::before {
-    content: 'md';
+  .gatsby-highlight pre[class="language-markdown"]::before {
+    content: "md";
   }
-  .gatsby-highlight pre[class='language-json']::before,
-  .gatsby-highlight pre[class='language-json5']::before {
-    content: 'json';
+  .gatsby-highlight pre[class="language-json"]::before,
+  .gatsby-highlight pre[class="language-json5"]::before {
+    content: "json";
   }
-  .gatsby-highlight pre[class='language-diff']::before {
-    content: 'diff';
+  .gatsby-highlight pre[class="language-diff"]::before {
+    content: "diff";
   }
-  .gatsby-highlight pre[class='language-text']::before {
-    content: 'text';
+  .gatsby-highlight pre[class="language-text"]::before {
+    content: "text";
   }
-  .gatsby-highlight pre[class='language-flow']::before {
-    content: 'flow';
+  .gatsby-highlight pre[class="language-flow"]::before {
+    content: "flow";
   }
 
   /* Prism Styles */

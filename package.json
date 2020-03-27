@@ -20,6 +20,7 @@
     "gatsby-remark-images": "^3.2.1",
     "gatsby-remark-prismjs": "^3.4.1",
     "gatsby-source-filesystem": "^2.1.56",
+    "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.19",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
@@ -46,6 +47,21 @@
   "keywords": [
     "gatsby"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -53,14 +69,13 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/andodevel/gatsby-folio"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/andodevel/gatsby-folio/issues"
   }
 }
