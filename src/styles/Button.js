@@ -8,7 +8,7 @@ const Button = styled.button`
   border: 0.1rem solid ${colors.component};
   border-radius: ${Theme.borderRadius};
   font-size: ${fontSizes.smish};
-  font-family: ${fonts.SFMono};
+  font-family: ${fonts.Monofur};
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

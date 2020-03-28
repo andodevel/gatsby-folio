@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import mixins from './mixins';
+import Mixins from './Mixins';
 
 const Main = styled.main`
-  ${mixins.sidePadding};
+  ${Mixins.sidePadding};
   margin: 0 auto;
   width: 100%;
   max-width: 160rem;

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import Theme from './Theme';
 import FontFaces from './Fonts';
-import Mixins from './Minxins';
+import Mixins from './Mixins';
 import Transition from './Transition';
 const { colors, fontSizes, fonts } = Theme;
 
@@ -205,13 +205,13 @@ const Global = createGlobalStyle`
   }
 
   code {
-    font-family: ${fonts.SFMono};
+    font-family: ${fonts.Monofur};
     font-size: ${fontSizes.md};
   }
 
   .overline {
     color: ${colors.green};
-    font-family: ${fonts.SFMono};
+    font-family: ${fonts.Monofur};
     font-size: ${fontSizes.md};
     font-weight: normal;
   }
@@ -220,7 +220,7 @@ const Global = createGlobalStyle`
     color: ${colors.green};
     margin: 0 0 2rem 0;
     font-size: ${fontSizes.md};
-    font-family: ${fonts.SFMono};
+    font-family: ${fonts.Monofur};
     font-weight: normal;
     line-height: 1.5;
     a {
@@ -242,7 +242,7 @@ const Global = createGlobalStyle`
     }
     a {
       ${Mixins.inlineLink};
-      font-family: ${fonts.SFMono};
+      font-family: ${fonts.Monofur};
       font-size: ${fontSizes.sm};
       font-weight: bold;
       line-height: 1.5;
