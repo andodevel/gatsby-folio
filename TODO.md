@@ -1,0 +1,1 @@
+Styling: Theme fully supported

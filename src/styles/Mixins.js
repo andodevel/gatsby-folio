@@ -115,9 +115,6 @@ const Mixins = {
 
   sidePadding: css`
     padding: 0 15rem;
-    ${media.desktop`padding: 0 10rem;`};
-    ${media.tablet`padding: 0 5rem;`};
-    ${media.phablet`padding: 0 2.5rem;`};
   `,
 
   boxShadow: css`

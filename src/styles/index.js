@@ -1,7 +1,11 @@
-import Colors from './Colors';
+import Button from './Button';
+import Footer from './Footer';
 import Global from './Global';
-import Mixins from './Mixins';
-import Prism from './Prism';
+import Header from './Header';
+import Heading from './Heading';
+import Link from './Link';
+import Main from './Main';
+import Section from './Section';
 import Theme from './Theme';
 
-export { Colors, Global, Mixins, Prism, Theme };
+export { Button, Footer, Global, Header, Heading, Link, Main, Section, Theme };

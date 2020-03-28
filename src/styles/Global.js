@@ -3,7 +3,6 @@ import Theme from './Theme';
 import FontFaces from './Fonts';
 import Mixins from './Minxins';
 import Transition from './Transition';
-import Prism from './Prism';
 const { colors, fontSizes, fonts } = Theme;
 
 const Global = createGlobalStyle`
@@ -225,7 +224,7 @@ const Global = createGlobalStyle`
     font-weight: normal;
     line-height: 1.5;
     a {
-      ${Mixin.inlineLink};
+      ${Mixins.inlineLink};
       line-height: 1.5;
     }
   }
@@ -257,8 +256,6 @@ const Global = createGlobalStyle`
   }
 
   ${Transition};
-
-  ${Prism};
 `;
 
 export default Global;
