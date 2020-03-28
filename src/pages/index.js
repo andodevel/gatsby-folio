@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, SEO, Image } from '@components';
+import { Layout, SEO, About } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -9,16 +9,11 @@ const StyledMainContainer = styled(Main)`
   counter-reset: section;
 `;
 
-const IndexPage = ({ location }) => (
+const IndexPage = ({ location, data }) => (
   <Layout location={location}>
     <SEO title="Home" />
     <StyledMainContainer className="fillHeight">
-      <h1>Hi, my name is</h1>
-      <p>An Do</p>
-      <p>A full-stack Java developer with passion of building thing</p>
-      <div style={{ maxWidth: `30rem`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
+      <About data={data.about.edges} />
     </StyledMainContainer>
   </Layout>
 );

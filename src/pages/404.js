@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import { Layout, SEO } from '@components';
 import styled from 'styled-components';
@@ -37,17 +36,13 @@ const NotFoundPage = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO title="404: Not found" />
-      <TransitionGroup component={null}>
-        {isMounted && (
-          <CSSTransition timeout={500} classNames="fade">
-            <StyledMainContainer className="fillHeight">
-              <StyledTitle>404</StyledTitle>
-              <StyledSubtitle>Page Not Found</StyledSubtitle>
-              <StyledHomeButton to="/">Go Home</StyledHomeButton>
-            </StyledMainContainer>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
+      {isMounted && (
+        <StyledMainContainer className="fillHeight">
+          <StyledTitle>404</StyledTitle>
+          <StyledSubtitle>Page Not Found</StyledSubtitle>
+          <StyledHomeButton to="/">Go Home</StyledHomeButton>
+        </StyledMainContainer>
+      )}
     </Layout>
   );
 };

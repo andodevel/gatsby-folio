@@ -1,5 +1,5 @@
 import Layout from './layout';
 import SEO from './seo';
-import Image from './image';
+import About from './sections/about';
 
-export { Layout, SEO, Image };
+export { Layout, SEO, About };

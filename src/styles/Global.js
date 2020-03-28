@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import Theme from './Theme';
 import FontFaces from './Fonts';
 import Mixins from './Mixins';
-import Transition from './Transition';
 const { colors, fontSizes, fonts } = Theme;
 
 const Global = createGlobalStyle`
@@ -30,7 +29,7 @@ const Global = createGlobalStyle`
     background-color: ${colors.navy};
     color: ${colors.slate};
     line-height: 1.3;
-    font-family: ${fonts.Hack};
+    font-family: ${fonts.HackMono};
     font-size: ${fontSizes.xl};
 
     &.hidden {
@@ -254,8 +253,6 @@ const Global = createGlobalStyle`
   .gatsby-image-outer-wrapper {
     height: 100%;
   }
-
-  ${Transition};
 `;
 
 export default Global;
