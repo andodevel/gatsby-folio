@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Theme from './theme';
+import Theme from './Theme';
 const { colors } = Theme;
 
 const Link = styled.a`

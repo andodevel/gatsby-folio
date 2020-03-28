@@ -1,14 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import PropTypes from 'prop-types';
+import { Layout, SEO } from '@components';
+import styled from 'styled-components';
+import { Theme, Mixins, Main } from '@styles';
+const { colors, fonts } = Theme;
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+const StyledMainContainer = styled(Main)`
+  ${Mixins.flexCenter};
+  flex-direction: column;
+`;
+const StyledTitle = styled.h1`
+  color: ${colors.component};
+  font-family: ${fonts.Monofur};
+  font-size: 12vw;
+  line-height: 1;
+`;
+const StyledSubtitle = styled.h2`
+  font-size: 3vw;
+  font-weight: 400;
+`;
+const StyledHomeButton = styled(Link)`
+  ${Mixins.bigButton};
+  margin-top: 40px;
+`;
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-);
+const NotFoundPage = ({ location }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), 1000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <Layout location={location}>
+      <SEO title="404: Not found" />
+      <TransitionGroup component={null}>
+        {isMounted && (
+          <CSSTransition timeout={500} classNames="fade">
+            <StyledMainContainer className="fillHeight">
+              <StyledTitle>404</StyledTitle>
+              <StyledSubtitle>Page Not Found</StyledSubtitle>
+              <StyledHomeButton to="/">Go Home</StyledHomeButton>
+            </StyledMainContainer>
+          </CSSTransition>
+        )}
+      </TransitionGroup>
+    </Layout>
+  );
+};
+
+NotFoundPage.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export default NotFoundPage;
