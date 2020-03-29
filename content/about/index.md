@@ -3,13 +3,13 @@ title: 'About Me'
 avatar: './me.jpg'
 skills:
   - Java
-  - Backend
-  - JavaScript
-  - HTML
-  - CSS
+  - Spring
+  - MySQL
   - ReactJS
+  - Docker
+  - k8s
 ---
 
-Hello! I'm An Do, a software engineer based in Saigon who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+Esse exercitation qui nulla labore. Irure irure esse proident nulla ullamco incididunt esse dolor irure magna ex sit reprehenderit magna. Dolor et amet non ad dolor aute aliquip commodo sit esse.
 
-Here are a few technologies I've been working with recently:
+Culpa ex anim deserunt quis nostrud velit cupidatat elit aute officia ad non tempor.

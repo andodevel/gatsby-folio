@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Layout, SEO } from '@components';
@@ -25,27 +25,16 @@ const StyledHomeButton = styled(Link)`
   margin-top: 40px;
 `;
 
-const NotFoundPage = ({ location }) => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 1000);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  return (
-    <Layout location={location}>
-      <SEO title="404: Not found" />
-      {isMounted && (
-        <StyledMainContainer className="fillHeight">
-          <StyledTitle>404</StyledTitle>
-          <StyledSubtitle>Page Not Found</StyledSubtitle>
-          <StyledHomeButton to="/">Go Home</StyledHomeButton>
-        </StyledMainContainer>
-      )}
-    </Layout>
-  );
-};
+const NotFoundPage = ({ location }) => (
+  <Layout location={location}>
+    <SEO title="404: Not found" />
+    <StyledMainContainer className="fillHeight">
+      <StyledTitle>404</StyledTitle>
+      <StyledSubtitle>Page Not Found</StyledSubtitle>
+      <StyledHomeButton to="/">Go Home</StyledHomeButton>
+    </StyledMainContainer>
+  </Layout>
+);
 
 NotFoundPage.propTypes = {
   location: PropTypes.object.isRequired,
