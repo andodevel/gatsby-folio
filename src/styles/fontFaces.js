@@ -18,86 +18,86 @@ import MonofurItalicNerdFontCompleteMonoTTF from '@fonts/Monofur/MonofurItalicNe
 
 const FontFaces = css`
   @font-face {
-    font-family: 'Hack';
+    font-family: 'Hack Nerd Font';
     src: url(${HackRegularNerdFontCompleteTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Hack Mono';
+    font-family: 'Hack Nerd Font Mono';
     src: url(${HackRegularNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Hack';
+    font-family: 'Hack Nerd Font';
     src: url(${HackBoldNerdFontCompleteTTF}) format('truetype');
     font-weight: 600;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Hack Mono';
+    font-family: 'Hack Nerd Font Mono';
     src: url(${HackBoldNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: 600;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Hack';
+    font-family: 'Hack Nerd Font';
     src: url(${HackItalicNerdFontCompleteTTF}) format('truetype');
     font-weight: normal;
     font-style: italic;
   }
   @font-face {
-    font-family: 'Hack Mono';
+    font-family: 'Hack Nerd Font Mono';
     src: url(${HackItalicNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: normal;
     font-style: italic;
   }
   @font-face {
-    font-family: 'Hack';
+    font-family: 'Hack Nerd Font';
     src: url(${HackBoldItalicNerdFontCompleteTTF}) format('truetype');
     font-weight: 600;
     font-style: italic;
   }
   @font-face {
-    font-family: 'Hack Mono';
+    font-family: 'Hack Nerd Font Mono';
     src: url(${HackBoldItalicNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: 600;
     font-style: italic;
   }
 
   @font-face {
-    font-family: 'Monofur';
+    font-family: 'Monofur Nerd Font';
     src: url(${MonofurNerdFontCompleteTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Monofur Mono';
+    font-family: 'Monofur Nerd Font Mono';
     src: url(${MonofurNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Monofur';
+    font-family: 'Monofur Nerd Font';
     src: url(${MonofurBoldNerdFontCompleteTTF}) format('truetype');
     font-weight: 600;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Monofur Mono';
+    font-family: 'Monofur Nerd Font Mono';
     src: url(${MonofurBoldNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: 600;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Monofur';
+    font-family: 'Monofur Nerd Font';
     src: url(${MonofurItalicNerdFontCompleteTTF}) format('truetype');
     font-weight: normal;
     font-style: italic;
   }
   @font-face {
-    font-family: 'Monofur Mono';
+    font-family: 'Monofur Nerd Font Mono';
     src: url(${MonofurItalicNerdFontCompleteMonoTTF}) format('truetype');
     font-weight: normal;
     font-style: italic;

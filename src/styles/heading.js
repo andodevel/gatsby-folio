@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Theme from './Theme';
+import Theme from './theme';
 const { colors, fontSizes, fonts } = Theme;
 
 const Heading = styled.h3`
@@ -15,7 +15,7 @@ const Heading = styled.h3`
     counter-increment: section;
     content: '0' counter(section) '.';
     margin-right: 1rem;
-    font-family: ${fonts.Monofur};
+    font-family: ${fonts.secondary};
     font-weight: normal;
     color: ${colors.component};
     font-size: ${fontSizes.xl};

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Theme from './Theme';
+import Theme from './theme';
 const { colors, fontSizes, fonts } = Theme;
 
 const Button = styled.button`
@@ -8,7 +8,7 @@ const Button = styled.button`
   border: 0.1rem solid ${colors.component};
   border-radius: ${Theme.borderRadius};
   font-size: ${fontSizes.smish};
-  font-family: ${fonts.Monofur};
+  font-family: ${fonts.secondary};
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

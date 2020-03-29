@@ -12,7 +12,7 @@ const StyledMainContainer = styled(Main)`
 `;
 const StyledTitle = styled.h1`
   color: ${colors.component};
-  font-family: ${fonts.Monofur};
+  font-family: ${fonts.secondary};
   font-size: 12vw;
   line-height: 1;
 `;

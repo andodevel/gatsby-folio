@@ -31,7 +31,7 @@ const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-  font-family: ${fonts.Monofur};
+  font-family: ${fonts.secondary};
   font-size: ${fontSizes.smish};
   color: ${colors.slate};
   &:before {

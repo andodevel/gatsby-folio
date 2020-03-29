@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Theme from './Theme';
+import Theme from './theme';
 
 const Footer = styled.footer`
   margin: 0;
