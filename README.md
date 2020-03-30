@@ -5,7 +5,7 @@
   This project is built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, Check out the <a href="https://andodevel.me" target="_blank">Live Preview</a>.
 </p>
 
-![demo](./src/docs/preview.png)
+![demo](./docs/preview.png)
 
 ## 🚀 Quick start
 
@@ -89,20 +89,21 @@ yarn serve
 
 ## 🧐 What's inside?
 
-I will guide you through some parts that you need to custom your own verson of this project. For generic (Gatsby Project Structure)(https://www.gatsbyjs.org/docs/gatsby-project-structure/), please check out the link.  
- .
-├── node_modules
-├── src
-├── .gitignore
-├── .prettierrc
-├── gatsby-browser.js
-├── gatsby-config.js
-├── gatsby-node.js
-├── gatsby-ssr.js
-├── LICENSE
-├── package-lock.json
-├── package.json
-└── README.md
+I will guide you through some parts that you need to custom your own verson of this project. For generic (Gatsby Project Structure)(https://www.gatsbyjs.org/docs/gatsby-project-structure/), please check out the link.
+
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
 1.  **`/dir`**
 
