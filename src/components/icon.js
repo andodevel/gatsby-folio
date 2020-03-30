@@ -1,20 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IconExternal, IconFolder, IconFork, IconGitHub, IconLoader, IconStar } from '@icons';
+import {
+  IconExternal,
+  IconFacebook,
+  IconFolder,
+  IconFork,
+  IconGitHub,
+  IconLoader,
+  IconStar,
+} from '@icons';
+
+export const IconNames = {
+  EXTERNAL: 'External',
+  FACEBOOK: 'Facebook',
+  FOLDER: 'Folder',
+  FORK: 'Fork',
+  GITHUB: 'GitHub',
+  LOADER: 'Loader',
+  STAR: 'Star',
+};
 
 const Icon = ({ name }) => {
   switch (name) {
-    case 'External':
+    case IconNames.EXTERNAL:
       return <IconExternal />;
-    case 'Folder':
+    case IconNames.FACEBOOK:
+      return <IconFacebook />;
+    case IconNames.FOLDER:
       return <IconFolder />;
-    case 'Fork':
+    case IconNames.FORK:
       return <IconFork />;
-    case 'GitHub':
+    case IconNames.GITHUB:
       return <IconGitHub />;
-    case 'Loader':
+    case IconNames.LOADER:
       return <IconLoader />;
-    case 'Star':
+    case IconNames.STAR:
       return <IconStar />;
     default:
       return <IconExternal />;

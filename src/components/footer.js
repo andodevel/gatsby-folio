@@ -1,29 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from '@components';
+import { Icon, IconNames } from '@components';
 import styled from 'styled-components';
 import { Theme, Mixins } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled.footer`
-  ${Mixins.flexCenter};
-  flex-direction: column;
+  ${Mixins.flexBetween};
+  flex-direction: row;
   padding: 15px;
   background-color: ${colors.darkNavy};
   color: ${colors.slate};
   text-align: center;
   height: auto;
-  min-height: 70px;
+  min-height: 50px;
 `;
 const StyledSocial = styled.div`
   color: ${colors.lightSlate};
   width: 100%;
   max-width: 270px;
-  margin: 0 auto 10px;
-  display: none;
 `;
 const StyledSocialList = styled.ul`
-  ${Mixins.flexBetween};
+  ${Mixins.flexStart};
   padding: 0;
   margin: 0;
   list-style: none;
@@ -31,13 +29,13 @@ const StyledSocialList = styled.ul`
 const StyledSocialLink = styled.a`
   padding: 10px;
   svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 `;
 const StyledMetadata = styled.div`
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.xs};
+  font-family: ${fonts.secondary};
+  font-size: ${fontSizes.s};
   line-height: 1;
 `;
 const StyledGitHubLink = styled.a`
@@ -78,9 +76,6 @@ const Footer = () => {
   });
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
     fetch('https://api.github.com/repos/andodevel/gatsby-folio')
       .then(response => response.json())
       .then(json => {
@@ -113,21 +108,19 @@ const Footer = () => {
       </StyledSocial>
       <StyledMetadata tabindex="-1">
         <StyledGitHubLink
-          href="https://github.com/gatsby-folio"
+          href="https://github.com/andodevel/gatsby-folio"
           target="_blank"
           rel="nofollow noopener noreferrer">
-          {githubInfo.stars && githubInfo.forks && (
-            <StyledGitHubInfo>
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks}</span>
-              </span>
-            </StyledGitHubInfo>
-          )}
+          <StyledGitHubInfo>
+            <span>
+              <Icon name={IconNames.STAR} />
+              <span>{githubInfo.stars}</span>
+            </span>
+            <span>
+              <Icon name={IconNames.FORK} />
+              <span>{githubInfo.forks}</span>
+            </span>
+          </StyledGitHubInfo>
         </StyledGitHubLink>
       </StyledMetadata>
     </StyledContainer>
