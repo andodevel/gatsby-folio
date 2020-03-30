@@ -1,12 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import Theme from './theme';
-import FontFaces from './fontFaces';
 import Mixins from './mixins';
 const { colors, fontSizes, fonts } = Theme;
 
 const Global = createGlobalStyle`
-  ${FontFaces};
-
   html {
     box-sizing: border-box;
     width: 100%;
@@ -27,10 +24,10 @@ const Global = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: ${colors.background};
-    color: ${colors.fg0};
+    color: ${colors.primary};
     line-height: 1.3;
-    font-family: ${fonts.HackMono};
-    font-size: ${fontSizes.xl};
+    font-family: ${fonts.primary};
+    font-size: ${fontSizes.md};
 
     &.hidden {
       overflow: hidden;

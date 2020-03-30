@@ -9,6 +9,7 @@ const Footer = styled.footer`
   bottom: 0;
   width: 100%;
   background-color: ${colors.footerBackground};
+  font-size: 1.3rem;
 `;
 
 export default Footer;

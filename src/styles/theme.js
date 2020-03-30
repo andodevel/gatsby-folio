@@ -3,17 +3,18 @@ import Fonts from './fonts';
 
 const Theme = {
   colors: {
+    primary: `${Colors.fg0}`,
     background: `${Colors.bg}`,
     text: `${Colors.fg}`,
-    component: `${Colors.green1}`,
+    component: `${Colors.yellow1}`,
     shadow: `${Colors.bg4}`,
-    headerBackground: `${Colors.bg3}`,
-    footerBackground: `${Colors.bg3}`,
+    headerBackground: `${Colors.bg2}`,
+    footerBackground: `${Colors.bg2}`,
   },
 
   fonts: {
-    primary: `${Fonts.HackMono}`,
-    secondary: `${Fonts.MonofurMono}`,
+    primary: `${Fonts.Hack}`,
+    secondary: `${Fonts.Monofur}`,
   },
 
   fontSizes: {

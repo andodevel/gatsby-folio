@@ -28,6 +28,21 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: [
+            'Hack Nerd Font',
+            'Hack Nerd Font Mono',
+            'Monofur Nerd Font',
+            'Monofur Nerd Font Mono',
+          ],
+          urls: ['fonts.css'],
+        },
+      },
+    },
+    // Disable due to failed CI build with Netlify
     // `gatsby-plugin-sitemap`,
     // `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,

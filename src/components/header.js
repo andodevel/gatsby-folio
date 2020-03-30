@@ -39,7 +39,6 @@ const StyledNav = styled.nav`
 const StyledLogo = styled.div`
   ${Mixins.flexCenter};
   a {
-    font-family: ${fonts.primary};
     font-weight: 550;
     display: block;
     color: ${colors.component};
