@@ -5,7 +5,7 @@
   This project is built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, Check out the <a href="https://andodevel.me" target="_blank">Live Preview</a>.
 </p>
 
-![demo](./src/images/preview.png)
+![demo](./src/docs/preview.png)
 
 ## 🚀 Quick start
 
