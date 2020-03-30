@@ -124,12 +124,12 @@ const Mixins = {
   `,
 
   boxShadow: css`
-    box-shadow: 0 1rem 3rem -1.5rem ${colors.shadow};
+    box-shadow: 0 5px 15px -10px ${colors.shadow};
     transition: ${Theme.transition};
 
     &:hover,
     &:focus {
-      box-shadow: 0 2rem 3rem -1.5rem ${colors.shadow};
+      box-shadow: 0 8px 15px -10px ${colors.shadow};
     }
   `,
 

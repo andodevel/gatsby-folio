@@ -6,4 +6,5 @@ Use react hook
 Create configuration
 Correct css size(rem, px, vh and vw)  
 Support responsive
-Remove not neccessary transition
+Remove not neccessary transition  
+Loading effects

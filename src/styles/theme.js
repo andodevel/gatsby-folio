@@ -3,11 +3,12 @@ import Fonts from './fonts';
 
 const Theme = {
   colors: {
-    background: `${Colors.orange1}`,
+    background: `${Colors.bg}`,
     text: `${Colors.fg}`,
     component: `${Colors.green1}`,
     shadow: `${Colors.bg4}`,
-    headerBackground: `${Colors.bg}`,
+    headerBackground: `${Colors.bg3}`,
+    footerBackground: `${Colors.bg3}`,
   },
 
   fonts: {

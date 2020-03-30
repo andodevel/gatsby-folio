@@ -26,8 +26,8 @@ const Global = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.navy};
-    color: ${colors.slate};
+    background-color: ${colors.background};
+    color: ${colors.fg0};
     line-height: 1.3;
     font-family: ${fonts.HackMono};
     font-size: ${fontSizes.xl};

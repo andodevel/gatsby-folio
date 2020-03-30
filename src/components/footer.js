@@ -27,7 +27,7 @@ const StyledSocialList = styled.ul`
   list-style: none;
 `;
 const StyledSocialLink = styled.a`
-  padding: 10px;
+  padding: 0px 10px;
   svg {
     width: 16px;
     height: 16px;
@@ -40,10 +40,10 @@ const StyledMetadata = styled.div`
 `;
 const StyledGitHubLink = styled.a`
   color: ${colors.slate};
-  padding: 10px;
+  padding: 0px;
 `;
 const StyledGitHubInfo = styled.div`
-  margin-top: 10px;
+  margin-top: 0px;
 
   & > span {
     display: inline-flex;
