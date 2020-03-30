@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Icon, IconNames } from '@components';
 import styled from 'styled-components';
-import { Theme, Mixins } from '@styles';
+import { Theme, Mixins, Footer as StyledFooter } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 
-const StyledContainer = styled.footer`
+const StyledContainer = styled(StyledFooter)`
   ${Mixins.flexBetween};
   flex-direction: row;
-  padding: 15px;
+  padding: 0px 20px;
   background-color: ${colors.darkNavy};
   color: ${colors.slate};
   text-align: center;
   height: auto;
-  min-height: 50px;
+  min-height: 40px;
 `;
 const StyledSocial = styled.div`
   color: ${colors.lightSlate};

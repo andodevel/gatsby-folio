@@ -11,7 +11,7 @@ const StyledContainer = styled.header`
   ${Mixins.flexBetween};
   position: fixed;
   top: 0;
-  padding: 0px 50px;
+  padding: 0px 20px;
   background-color: ${colors.headerBackground};
   transition: ${Theme.transition};
   z-index: 11;
@@ -19,7 +19,8 @@ const StyledContainer = styled.header`
   pointer-events: auto !important;
   user-select: auto !important;
   width: 100%;
-  height: ${props => (props.scrollDirection === 'none' ? Theme.navHeight : Theme.navScrollHeight)};
+  height: auto;
+  min-height: 40px;
   box-shadow: ${props =>
     props.scrollDirection === 'up' ? `0 10px 30px -10px ${colors.shadowNavy}` : 'none'};
   transform: translateY(
@@ -38,10 +39,10 @@ const StyledNav = styled.nav`
 const StyledLogo = styled.div`
   ${Mixins.flexCenter};
   a {
+    font-family: ${fonts.primary};
+    font-weight: 550;
     display: block;
     color: ${colors.component};
-    width: 42px;
-    height: 42px;
     &:hover,
     &:focus {
       svg {
@@ -53,71 +54,6 @@ const StyledLogo = styled.div`
       transition: ${Theme.transition};
       user-select: none;
     }
-  }
-`;
-const StyledHamburger = styled.div`
-  ${Mixins.flexCenter};
-  overflow: visible;
-  margin: 0 -12px 0 0;
-  padding: 15px;
-  cursor: pointer;
-  transition-timing-function: linear;
-  transition-duration: 0.15s;
-  transition-property: opacity, filter;
-  text-transform: none;
-  color: inherit;
-  border: 0;
-  background-color: transparent;
-  display: none;
-`;
-const StyledHamburgerBox = styled.div`
-  position: relative;
-  display: inline-block;
-  width: ${Theme.hamburgerWidth}px;
-  height: 24px;
-`;
-const StyledHamburgerInner = styled.div`
-  background-color: ${colors.component};
-  position: absolute;
-  width: ${Theme.hamburgerWidth}px;
-  height: 2px;
-  border-radius: ${Theme.borderRadius};
-  top: 50%;
-  left: 0;
-  right: 0;
-  transition-duration: 0.22s;
-  transition-property: transform;
-  transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
-  transform: rotate(${props => (props.menuOpen ? `225deg` : `0deg`)});
-  transition-timing-function: cubic-bezier(
-    ${props => (props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`)}
-  );
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    background-color: ${colors.component};
-    position: absolute;
-    left: auto;
-    right: 0;
-    width: ${Theme.hamburgerWidth}px;
-    height: 2px;
-    transition-timing-function: ease;
-    transition-duration: 0.15s;
-    transition-property: transform;
-    border-radius: 4px;
-  }
-  &:before {
-    width: ${props => (props.menuOpen ? `100%` : `120%`)};
-    top: ${props => (props.menuOpen ? `0` : `-10px`)};
-    opacity: ${props => (props.menuOpen ? 0 : 1)};
-    transition: ${props => (props.menuOpen ? Theme.hamBeforeActive : Theme.hamBefore)};
-  }
-  &:after {
-    width: ${props => (props.menuOpen ? `100%` : `80%`)};
-    bottom: ${props => (props.menuOpen ? `0` : `-10px`)};
-    transform: rotate(${props => (props.menuOpen ? `-90deg` : `0`)});
-    transition: ${props => (props.menuOpen ? Theme.hamAfterActive : Theme.hamAfter)};
   }
 `;
 const StyledLink = styled.div`
@@ -176,8 +112,6 @@ const navHeight = 100;
 
 class Header extends Component {
   state = {
-    isMounted: false,
-    menuOpen: false,
     scrollDirection: 'none',
     lastScrollTop: 0,
   };
@@ -185,11 +119,11 @@ class Header extends Component {
   toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen });
 
   handleScroll = () => {
-    const { isMounted, menuOpen, scrollDirection, lastScrollTop } = this.state;
+    const { menuOpen, scrollDirection, lastScrollTop } = this.state;
     const fromTop = window.scrollY;
 
     // Make sure they scroll more than DELTA
-    if (!isMounted || Math.abs(lastScrollTop - fromTop) <= DELTA || menuOpen) {
+    if (!Math.abs(lastScrollTop - fromTop) <= DELTA || menuOpen) {
       return;
     }
 
@@ -225,7 +159,7 @@ class Header extends Component {
   };
 
   render() {
-    const { isMounted, menuOpen, scrollDirection } = this.state;
+    const { menuOpen, scrollDirection } = this.state;
     const { siteTitle } = this.props;
     const timeout = 3000;
     const fadeClass = 'fade';
@@ -238,34 +172,19 @@ class Header extends Component {
         </Helmet>
         <StyledNav>
           <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledLogo tabindex="-1">
-                  <a href="/" aria-label="home">
-                    {siteTitle}
-                  </a>
-                </StyledLogo>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
-
-          <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledHamburger onClick={this.toggleMenu}>
-                  <StyledHamburgerBox>
-                    <StyledHamburgerInner menuOpen={menuOpen} />
-                  </StyledHamburgerBox>
-                </StyledHamburger>
-              </CSSTransition>
-            )}
+            <CSSTransition classNames={fadeClass} timeout={timeout}>
+              <StyledLogo tabindex="-1">
+                <a href="/" aria-label="home">
+                  {siteTitle}
+                </a>
+              </StyledLogo>
+            </CSSTransition>
           </TransitionGroup>
 
           <StyledLink>
             <StyledList>
               <TransitionGroup component={null}>
-                {isMounted &&
-                  navLinks &&
+                {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                       <StyledListItem key={i} style={{ transitionDelay: `${i * 100}ms` }}>
@@ -277,18 +196,16 @@ class Header extends Component {
             </StyledList>
 
             <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                  <div style={{ transitionDelay: `${navLinks.length * 100}ms` }}>
-                    <StyledResumeButton
-                      href="/resume.pdf"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer">
-                      Resume
-                    </StyledResumeButton>
-                  </div>
-                </CSSTransition>
-              )}
+              <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                <div style={{ transitionDelay: `${navLinks.length * 100}ms` }}>
+                  <StyledResumeButton
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer">
+                    Resume
+                  </StyledResumeButton>
+                </div>
+              </CSSTransition>
             </TransitionGroup>
           </StyledLink>
         </StyledNav>
