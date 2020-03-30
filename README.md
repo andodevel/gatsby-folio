@@ -156,6 +156,12 @@ I use [gruvbox](https://github.com/morhetz/gruvbox) as my color scheme
 
 _Not support yet_
 
+## 👓 Inspiration
+
+This project gets heavily insprired by  
+[gatsby-simplefolio](https://gatsby-simplefolio.netlify.com/)  
+[Brittany Chiang's portfolio](https://brittanychiang.com/)
+
 ## 🦄 Forking this repo
 
 Feel free to fork this repo and change it to whatever you want. If you want to give me a credit, please just give a link back to my website [https://andodevel.me](https://andodevel.me).  

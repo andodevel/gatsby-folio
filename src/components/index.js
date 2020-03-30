@@ -1,5 +1,8 @@
+import About from './sections/about';
+import Footer from './footer';
+import Header from './header';
+import Icon from './icon';
 import Layout from './layout';
 import SEO from './seo';
-import About from './sections/about';
 
-export { Layout, SEO, About };
+export { About, Footer, Header, Icon, Layout, SEO };

@@ -68,6 +68,7 @@ module.exports = {
           '@src': `${__dirname}/src`,
           '@components': `${__dirname}/src/components`,
           '@fonts': `${__dirname}/src/fonts`,
+          '@icons': `${__dirname}/src/icons`,
           '@images': `${__dirname}/src/images`,
           '@pages': `${__dirname}/src/pages`,
           '@styles': `${__dirname}/src/styles`,

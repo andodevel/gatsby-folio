@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Global, Theme } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 import Header from './header';
+import Footer from './footer';
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== 'undefined') {
@@ -63,13 +64,14 @@ const Layout = ({ children }) => {
 
   return (
     <div id="root">
-      <Header siteTitle={data.site.siteMetadata.title} />
       <Global />
-
       <SkipToContent href="#content">Skip to Content</SkipToContent>
-
       <StyledContent>
-        <div id="content">{children}</div>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div id="content">
+          {children}
+          <Footer />
+        </div>
       </StyledContent>
     </div>
   );
