@@ -8,11 +8,29 @@ const { colors } = Theme;
 const StyledContainer = styled.div`
   width: 40px;
   position: fixed;
-  bottom: 0;
-  left: ${props => (props.orientation === 'left' ? '20px' : 'auto')};
-  right: ${props => (props.orientation === 'left' ? 'auto' : '20px')};
+  top: 40px;
+  left: ${props => (props.orientation === 'left' ? '15px' : 'auto')};
+  right: ${props => (props.orientation === 'left' ? 'auto' : '15px')};
   z-index: 5;
   color: ${colors.component};
+
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: ${colors.component};
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: ${colors.component2};
+  }
 `;
 
 const Breadcumb = ({ children, orientation }) => (

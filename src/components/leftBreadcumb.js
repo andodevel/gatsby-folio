@@ -9,14 +9,6 @@ const StyledLinkWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  &:after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 150px;
-    margin: 0 auto;
-    background-color: ${colors.component};
-  }
 `;
 const StyledEmailLink = styled.a`
   font-family: ${fonts.secondary};
@@ -24,7 +16,7 @@ const StyledEmailLink = styled.a`
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 
   &:hover,
   &:focus {
