@@ -56,25 +56,15 @@ const StyledPic = styled.div`
 `;
 const StyledAvatar = styled(Img)`
   position: relative;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
   border-radius: ${Theme.borderRadius};
+  border: 2px solid ${colors.sectionHeading};
   transition: ${Theme.transition};
 `;
 const StyledAvatarLink = styled.a`
   ${Mixins.boxShadow};
   width: 100%;
   position: relative;
-  border-radius: ${Theme.borderRadius};
-  background-color: ${colors.component};
   margin-left: -20px;
-  &:hover,
-  &:focus {
-    background: transparent;
-    ${StyledAvatar} {
-      filter: none;
-    }
-  }
 `;
 
 const About = ({ data }) => {
