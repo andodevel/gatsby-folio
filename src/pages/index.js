@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, SEO, About } from '@components';
+import { Layout, About } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -10,8 +10,7 @@ const StyledMainContainer = styled(Main)`
 `;
 
 const IndexPage = ({ location, data }) => (
-  <Layout location={location}>
-    <SEO title="Home" />
+  <Layout seoTitle="Home" location={location}>
     <StyledMainContainer className="fillHeight">
       <About data={data.about.edges} />
     </StyledMainContainer>

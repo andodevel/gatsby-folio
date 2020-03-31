@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Icon, IconNames } from '@components';
+import Icon, { IconNames } from './icon';
 import styled from 'styled-components';
 import { Theme, Mixins, Footer as StyledFooter } from '@styles';
 const { colors, fontSizes, fonts } = Theme;

@@ -13,7 +13,7 @@ const StyledContainer = styled.header`
   padding: 0px 20px;
   background-color: ${colors.headerBackground};
   transition: ${Theme.transition};
-  z-index: 11;
+  z-index: 10;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;

@@ -6,6 +6,7 @@ import { Global, Theme } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 import Header from './header';
 import Footer from './footer';
+import LeftBreadcumb from './leftBreadcumb';
 import SEO from './seo';
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
@@ -72,6 +73,7 @@ const Layout = ({ seoTitle, children }) => {
       <SkipToContent href="#content">Skip to Content</SkipToContent>
       <StyledContent>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <LeftBreadcumb />
         <div id="content">
           {children}
           <Footer />

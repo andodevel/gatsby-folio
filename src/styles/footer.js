@@ -10,6 +10,7 @@ const Footer = styled.footer`
   width: 100%;
   background-color: ${colors.footerBackground};
   font-size: 1.3rem;
+  z-index: 10;
 `;
 
 export default Footer;
