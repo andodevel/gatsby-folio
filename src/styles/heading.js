@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import Theme from './theme';
-const { colors, fontSizes, fonts } = Theme;
+const { colors, fontSizes } = Theme;
 
 const Heading = styled.h3`
+  color: ${colors.sectionHeading};
   position: relative;
   display: flex;
   align-items: center;
@@ -10,18 +11,6 @@ const Heading = styled.h3`
   width: 100%;
   white-space: nowrap;
   font-size: ${fontSizes.h3};
-
-  &:before {
-    counter-increment: section;
-    content: '0' counter(section) '.';
-    margin-right: 1rem;
-    font-family: ${fonts.secondary};
-    font-weight: normal;
-    color: ${colors.component};
-    font-size: ${fontSizes.xl};
-    position: relative;
-    bottom: 0.4rem;
-  }
 
   &:after {
     content: '';

@@ -10,6 +10,7 @@ const Theme = {
     shadow: `${Colors.bg4}`,
     headerBackground: `${Colors.bg2}`,
     footerBackground: `${Colors.bg2}`,
+    sectionHeading: `${Colors.aqua1}`,
   },
 
   fonts: {

@@ -66,16 +66,9 @@ const StyledList = styled.ol`
   list-style: none;
 `;
 const StyledListItem = styled.li`
-  margin: 0 10px;
+  margin: 0 5px;
   position: relative;
   font-size: ${fontSizes.smish};
-  counter-increment: item 1;
-  &:before {
-    content: '0' counter(item) '.';
-    text-align: right;
-    color: ${colors.component};
-    font-size: ${fontSizes.xs};
-  }
 `;
 const StyledListLink = styled(Link)`
   padding: 12px 10px;
