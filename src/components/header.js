@@ -72,11 +72,6 @@ const StyledListItem = styled.li`
 const StyledListLink = styled(Link)`
   padding: 12px 10px;
 `;
-const StyledResumeButton = styled.a`
-  ${Mixins.smallButton};
-  margin-left: 10px;
-  font-size: ${fontSizes.smish};
-`;
 
 const DELTA = 5;
 
@@ -164,19 +159,6 @@ class Header extends Component {
                   ))}
               </TransitionGroup>
             </StyledList>
-
-            <TransitionGroup component={null}>
-              <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                <div style={{ transitionDelay: `${navLinks.length * 100}ms` }}>
-                  <StyledResumeButton
-                    href="/resume.pdf"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer">
-                    Résumé
-                  </StyledResumeButton>
-                </div>
-              </CSSTransition>
-            </TransitionGroup>
           </StyledLink>
         </StyledNav>
       </StyledContainer>

@@ -7,6 +7,7 @@ const Theme = {
     background: `${Colors.bg}`,
     text: `${Colors.fg}`,
     component: `${Colors.yellow1}`,
+    component2: `${Colors.blue1}`,
     shadow: `${Colors.bg4}`,
     headerBackground: `${Colors.bg2}`,
     footerBackground: `${Colors.bg2}`,
