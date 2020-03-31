@@ -6,6 +6,7 @@ import { Global, Theme } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 import Header from './header';
 import Footer from './footer';
+import SEO from './seo';
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== 'undefined') {
@@ -51,7 +52,7 @@ const StyledContent = styled.div`
   min-height: 100vh;
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ seoTitle, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -62,8 +63,11 @@ const Layout = ({ children }) => {
     }
   `);
 
+  const title = seoTitle ? seoTitle : data.site.siteMetadata.title;
+
   return (
     <div id="root">
+      <SEO title={title} />
       <Global />
       <SkipToContent href="#content">Skip to Content</SkipToContent>
       <StyledContent>
@@ -78,8 +82,8 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
+  seoTitle: PropTypes.object,
   children: PropTypes.node.isRequired,
-  location: PropTypes.object.isRequired,
 };
 
 export default Layout;

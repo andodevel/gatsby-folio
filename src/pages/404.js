@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, SEO } from '@components';
+import { Layout } from '@components';
 import styled from 'styled-components';
 import { Theme, Mixins, Main } from '@styles';
 const { colors, fonts } = Theme;
@@ -26,8 +26,7 @@ const StyledHomeButton = styled(Link)`
 `;
 
 const NotFoundPage = ({ location }) => (
-  <Layout location={location}>
-    <SEO title="404: Not found" />
+  <Layout seoTitle="404: Not found" location={location}>
     <StyledMainContainer className="fillHeight">
       <StyledTitle>404</StyledTitle>
       <StyledSubtitle>Page Not Found</StyledSubtitle>

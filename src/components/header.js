@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
@@ -87,11 +86,11 @@ const navLinks = [
     url: '/#about',
   },
   {
-    name: 'Experience',
+    name: 'Jobs',
     url: '/#jobs',
   },
   {
-    name: 'Work',
+    name: 'Projects',
     url: '/#projects',
   },
   {
@@ -108,14 +107,12 @@ class Header extends Component {
     lastScrollTop: 0,
   };
 
-  toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen });
-
   handleScroll = () => {
-    const { menuOpen, scrollDirection, lastScrollTop } = this.state;
+    const { scrollDirection, lastScrollTop } = this.state;
     const fromTop = window.scrollY;
 
     // Make sure they scroll more than DELTA
-    if (!Math.abs(lastScrollTop - fromTop) <= DELTA || menuOpen) {
+    if (!Math.abs(lastScrollTop - fromTop) <= DELTA) {
       return;
     }
 
@@ -134,24 +131,8 @@ class Header extends Component {
     this.setState({ lastScrollTop: fromTop });
   };
 
-  handleResize = () => {
-    if (window.innerWidth > 768 && this.state.menuOpen) {
-      this.toggleMenu();
-    }
-  };
-
-  handleKeydown = e => {
-    if (!this.state.menuOpen) {
-      return;
-    }
-
-    if (e.which === 27 || e.key === 'Escape') {
-      this.toggleMenu();
-    }
-  };
-
   render() {
-    const { menuOpen, scrollDirection } = this.state;
+    const { scrollDirection } = this.state;
     const { siteTitle } = this.props;
     const timeout = 3000;
     const fadeClass = 'fade';
@@ -159,9 +140,6 @@ class Header extends Component {
 
     return (
       <StyledContainer scrollDirection={scrollDirection}>
-        <Helmet>
-          <body className={menuOpen ? 'blur' : ''} />
-        </Helmet>
         <StyledNav>
           <TransitionGroup component={null}>
             <CSSTransition classNames={fadeClass} timeout={timeout}>
@@ -194,7 +172,7 @@ class Header extends Component {
                     href="/resume.pdf"
                     target="_blank"
                     rel="nofollow noopener noreferrer">
-                    Resume
+                    Résumé
                   </StyledResumeButton>
                 </div>
               </CSSTransition>

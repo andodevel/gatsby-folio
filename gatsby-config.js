@@ -38,7 +38,7 @@ module.exports = {
             'Monofur Nerd Font',
             'Monofur Nerd Font Mono',
           ],
-          urls: ['fonts.css'],
+          urls: ['fonts/fonts.css'],
         },
       },
     },
