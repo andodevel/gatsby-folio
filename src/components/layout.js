@@ -84,7 +84,7 @@ const Layout = ({ seoTitle, children }) => {
 };
 
 Layout.propTypes = {
-  seoTitle: PropTypes.object,
+  seoTitle: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
