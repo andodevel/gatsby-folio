@@ -14,14 +14,14 @@ const StyledContainer = styled(Section)`
   }
 `;
 const StyledOverline = styled.p`
-  margin: 0 0 20px 3px;
+  margin: 0 0 10px 3px;
   color: ${colors.component};
   font-size: ${fontSizes.xl};
   font-family: ${fonts.secondary};
   font-weight: normal;
 `;
 const StyledTitle = styled.h1`
-  color: ${colors.component4};
+  color: ${colors.component3};
   font-size: 8rem;
   line-height: 1.5;
   margin: 0;
@@ -32,16 +32,16 @@ const StyledTitle = styled.h1`
     font-family: ${fonts.secondary};
     font-weight: normal;
     font-size: ${fontSizes.xl};
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
 `;
 const StyledSubtitle = styled.h2`
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 1.1;
   color: ${colors.component6};
 `;
 const StyledDescription = styled.div`
-  margin-top: 30px;
+  margin: 30px 0 0 20px;
   width: 50%;
   max-width: 600px;
   a {
@@ -50,7 +50,7 @@ const StyledDescription = styled.div`
 `;
 const StyledEmailLink = styled.a`
   ${Mixins.bigButton};
-  margin-top: 50px;
+  margin: 50px 0 0 5px;
 `;
 
 const email = 'ando.devel@gmail.com';

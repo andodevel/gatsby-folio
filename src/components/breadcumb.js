@@ -7,29 +7,31 @@ const { colors } = Theme;
 
 const StyledContainer = styled.div`
   width: 40px;
+  height: 100vh;
   position: fixed;
-  top: 40px;
-  left: ${props => (props.orientation === 'left' ? '15px' : 'auto')};
-  right: ${props => (props.orientation === 'left' ? 'auto' : '15px')};
+  left: ${props => (props.orientation === 'left' ? '30px' : 'auto')};
+  right: ${props => (props.orientation === 'left' ? 'auto' : '30px')};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
   color: ${colors.component};
 
   &:before {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 30px;
-    margin: 20px auto;
-    background-color: ${colors.component};
+    content: '}';
+    display: inline;
+    margin: 0 0 8px 3px;
+    transform: rotate(-90deg);
+    color: ${colors.component};
   }
 
   &:after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 100px;
-    margin: 20px auto;
-    background-color: ${colors.component2};
+    content: '}';
+    display: inline;
+    margin: 8px 0 0 3px;
+    transform: rotate(90deg);
+    color: ${colors.component2};
   }
 `;
 
