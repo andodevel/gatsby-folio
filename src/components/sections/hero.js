@@ -15,19 +15,18 @@ const StyledContainer = styled(Section)`
 `;
 const StyledOverline = styled.p`
   margin: 0 0 10px 3px;
-  color: ${colors.component};
   font-size: ${fontSizes.xl};
   font-family: ${fonts.secondary};
   font-weight: normal;
 `;
 const StyledTitle = styled.h1`
-  color: ${colors.component3};
+  color: ${colors.component7};
   font-size: 8rem;
   line-height: 1.5;
   margin: 0;
 
   &:before {
-    color: ${colors.component};
+    color: ${colors.primary};
     content: "I'm";
     font-family: ${fonts.secondary};
     font-weight: normal;

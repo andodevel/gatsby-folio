@@ -1,5 +1,5 @@
 ---
-title: Hello, world!
+title: Hi there,
 name: An Do
 subtitle: A Full-Stack Java developer
 contactText: Say Hello
