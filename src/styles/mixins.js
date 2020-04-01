@@ -98,9 +98,9 @@ const Mixins = {
   `,
 
   bigButton: css`
-    color: ${colors.component};
+    border: 0.1rem solid ${colors.button};
+    color: ${colors.buttonTxt};
     background-color: transparent;
-    border: 0.1rem solid ${colors.component};
     border-radius: ${Theme.borderRadius};
     padding: 1.25rem 1.75rem;
     font-size: ${fontSizes.sm};
@@ -112,7 +112,9 @@ const Mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.component};
+      border: 0.1rem solid ${colors.buttonActive};
+      color: ${colors.buttonActiveTxt};
+      background-color: ${colors.buttonActiveBg};
     }
     &:after {
       display: none !important;

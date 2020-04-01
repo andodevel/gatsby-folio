@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, About } from '@components';
+import { Layout, Hero, About } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -12,6 +12,7 @@ const StyledMainContainer = styled(Main)`
 const IndexPage = ({ location, data }) => (
   <Layout seoTitle="Home" location={location}>
     <StyledMainContainer className="fillHeight">
+      <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
     </StyledMainContainer>
   </Layout>
@@ -26,6 +27,19 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   {
+    hero: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            name
+            subtitle
+            contactText
+          }
+          html
+        }
+      }
+    }
     about: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/about/" } }) {
       edges {
         node {

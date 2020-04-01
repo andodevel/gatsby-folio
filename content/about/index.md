@@ -1,6 +1,6 @@
 ---
-title: 'About Me'
-avatar: './me.jpg'
+title: About Me
+avatar: ./me.jpg
 skills:
   - Java
   - Spring
