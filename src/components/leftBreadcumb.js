@@ -7,7 +7,7 @@ const { colors, fontSizes, fonts } = Theme;
 const StyledLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   position: relative;
 `;
 const StyledEmailLink = styled.a`

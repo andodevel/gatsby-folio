@@ -9,12 +9,12 @@ const StyledContainer = styled.div`
   width: 40px;
   height: 100vh;
   position: fixed;
-  left: ${props => (props.orientation === 'left' ? '30px' : 'auto')};
-  right: ${props => (props.orientation === 'left' ? 'auto' : '30px')};
+  left: ${props => (props.orientation === 'left' ? '50px' : 'auto')};
+  right: ${props => (props.orientation === 'left' ? 'auto' : '50px')};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   z-index: 5;
   color: ${colors.component};
 
