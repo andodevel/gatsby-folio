@@ -25,7 +25,7 @@ const Mixins = {
     outline: 0.1rem solid red;
   `,
 
-  link: css`
+  li: css`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -36,12 +36,12 @@ const Mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.link};
+      color: ${colors.component};
       outline: 0;
     }
   `,
 
-  inlineLink: css`
+  link: css`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -49,13 +49,11 @@ const Mixins = {
     transition: ${Theme.transition};
     cursor: pointer;
     color: ${colors.link};
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       color: ${colors.link};
       outline: 0;
       &:after {
-        width: 100%;
+        width: 50%;
       }
       & > * {
         color: ${colors.link} !important;
@@ -66,12 +64,13 @@ const Mixins = {
       content: '';
       display: block;
       width: 0;
-      height: 0.1rem;
+      height: 2px;
       position: relative;
-      bottom: 0.37em;
+      left: 2rem;
+      bottom: -0.2rem;
       background-color: ${colors.link};
       transition: ${Theme.transition};
-      opacity: 0.5;
+      opacity: 0.8;
     }
   `,
 
@@ -135,7 +134,7 @@ const Mixins = {
     }
   `,
 
-  fancyList: css`
+  ul: css`
     padding: 0;
     margin: 0;
     list-style: none;

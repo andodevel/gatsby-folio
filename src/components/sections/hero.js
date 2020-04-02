@@ -44,7 +44,7 @@ const StyledDescription = styled.div`
   width: 50%;
   max-width: 600px;
   a {
-    ${Mixins.inlineLink};
+    ${Mixins.link};
   }
 `;
 const StyledEmailLink = styled.a`

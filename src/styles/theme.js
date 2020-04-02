@@ -6,6 +6,7 @@ const Theme = {
     primary: `${Colors.fg0}`,
     background: `${Colors.bg}`,
     text: `${Colors.fg}`,
+    link: `${Colors.green2}`,
     component: `${Colors.orange1}`,
     component2: `${Colors.blue1}`,
     component3: `${Colors.purple1}`,
@@ -48,8 +49,8 @@ const Theme = {
   borderRadius: '5px',
   margin: '2.0rem',
 
-  tabHeight: '4.2rem',
-  tabWidth: '12.0rem',
+  tabHeight: '42', // px
+  tabWidth: '12', // px
   radius: '0.3rem',
 };
 

@@ -144,7 +144,7 @@ const Global = createGlobalStyle`
     margin: 0 0 1.5rem 0;
 
     & > a {
-      ${Mixins.inlineLink};
+      ${Mixins.link};
     }
 
     & > code {
@@ -220,7 +220,7 @@ const Global = createGlobalStyle`
     font-weight: normal;
     line-height: 1.5;
     a {
-      ${Mixins.inlineLink};
+      ${Mixins.link};
       line-height: 1.5;
     }
   }
@@ -237,7 +237,7 @@ const Global = createGlobalStyle`
       padding-top: 0.4rem;
     }
     a {
-      ${Mixins.inlineLink};
+      ${Mixins.link};
       font-family: ${fonts.secondary};
       font-size: ${fontSizes.sm};
       font-weight: bold;

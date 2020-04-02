@@ -16,7 +16,7 @@ const StyledContent = styled.div`
   width: 60%;
   max-width: 480px;
   a {
-    ${Mixins.inlineLink};
+    ${Mixins.link};
   }
 `;
 const SkillsContainer = styled.ul`

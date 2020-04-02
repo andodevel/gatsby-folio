@@ -1,8 +1,8 @@
 import React from 'react';
 import Breadcumb from './breadcumb';
 import styled from 'styled-components';
-import { Theme } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+import { Theme, Mixins } from '@styles';
+const { colors } = Theme;
 
 const StyledLinkWrapper = styled.div`
   display: flex;
@@ -11,8 +11,6 @@ const StyledLinkWrapper = styled.div`
   position: relative;
 `;
 const StyledEmailLink = styled.a`
-  font-family: ${fonts.secondary};
-  font-size: ${fontSizes.xs};
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
@@ -25,9 +23,7 @@ const StyledEmailLink = styled.a`
 `;
 
 const StyledResumeLink = styled.a`
-  font-family: ${fonts.secondary};
-  font-size: ${fontSizes.xs};
-  font-weight: 550;
+  ${Mixins.link};
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
