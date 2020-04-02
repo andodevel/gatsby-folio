@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Global, Theme } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+import { Global } from '@styles';
 import Header from './header';
 import Footer from './footer';
 import LeftBreadcumb from './leftBreadcumb';
@@ -15,38 +14,6 @@ if (typeof window !== 'undefined') {
   require('smooth-scroll')('a[href*="#"]');
 }
 
-const SkipToContent = styled.a`
-  position: absolute;
-  top: auto;
-  left: -999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  z-index: -99;
-  &:hover {
-    background-color: ${colors.background};
-  }
-  &:focus,
-  &:active {
-    outline: 0;
-    color: ${colors.component};
-    background-color: ${colors.headerBackground};
-    border-radius: ${Theme.borderRadius};
-    padding: 18px 23px;
-    font-size: ${fontSizes.sm};
-    font-family: ${fonts.secondary};
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: ${Theme.transition};
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    z-index: 99;
-  }
-`;
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -70,7 +37,6 @@ const Layout = ({ seoTitle, children }) => {
     <div id="root">
       <SEO title={title} />
       <Global />
-      <SkipToContent href="#content">Skip to Content</SkipToContent>
       <StyledContent>
         <Header siteTitle={data.site.siteMetadata.title} />
         <LeftBreadcumb />
