@@ -17,9 +17,9 @@ const StyledContent = styled.div`
   grid-row: 1 / -1;
 `;
 const StyledProjectName = styled.h5`
-  font-size: 2 0.8rem;
   margin: 0 0 2rem;
   color: ${colors.primaryComponent};
+  font-weight: 500;
 `;
 const StyledDescription = styled.div`
   ${Mixins.boxShadow};

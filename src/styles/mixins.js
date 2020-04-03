@@ -45,10 +45,10 @@ const Mixins = {
       padding-left: 3rem;
       margin-bottom: 1rem;
       &:before {
-        content: '▹';
+        content: '→';
         position: absolute;
         left: 0;
-        color: ${colors.primaryComponent};
+        color: ${colors.indicator};
       }
     }
   `,

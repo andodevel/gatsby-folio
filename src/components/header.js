@@ -63,8 +63,7 @@ const navLinks = [
   },
 ];
 
-const Header = props => {
-  const { siteTitle } = props;
+const Header = () => {
   const timeout = 3000;
   const fadeClass = 'fade';
   const fadeDownClass = 'fadedown';
@@ -76,7 +75,7 @@ const Header = props => {
           <CSSTransition classNames={fadeClass} timeout={timeout}>
             <StyledLogo tabindex="-1">
               <a href="/" aria-label="home">
-                {siteTitle}
+                Home
               </a>
             </StyledLogo>
           </CSSTransition>

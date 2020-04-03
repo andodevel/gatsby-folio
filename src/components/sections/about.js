@@ -34,10 +34,10 @@ const Skill = styled.li`
   font-family: ${fonts.secondary};
   color: ${colors.slate};
   &:before {
-    content: '▹';
+    content: '→';
     position: absolute;
     left: 0;
-    color: ${colors.green};
+    color: ${colors.indicator};
     line-height: 1.2rem;
   }
 `;
