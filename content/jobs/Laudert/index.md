@@ -1,9 +1,9 @@
 ---
-date: '2016-06-01'
-title: 'Print Solution Engineer'
-company: 'Laudert'
-range: 'Jun 2016 - Dec 2018'
-url: 'https://www.laudert.com/'
+date: 2016-06-01
+title: Print Solution Engineer
+company: Laudert
+range: Jun 2016 - Dec 2018
+url: https://www.laudert.com/
 techs:
   - JEE
   - MySQL

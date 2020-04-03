@@ -10,4 +10,4 @@ techs:
   - Puppepteer
 ---
 
-Officia sint id occaecat et. Dolore culpa pariatur laboris anim. Esse tempor proident adipisicing quis proident nisi proident eiusmod velit est do. Dolore sunt et fugiat commodo amet excepteur velit.
+Generate PDF file from input web link that uses Chrome headless 'print as PDF' under the hood. Also support for sending pdf to specific email.

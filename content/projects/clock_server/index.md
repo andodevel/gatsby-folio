@@ -9,4 +9,4 @@ techs:
   - Echo
 ---
 
-Quis sit fugiat cupidatat dolor. Eiusmod voluptate deserunt consectetur exercitation culpa sint eiusmod dolore laborum labore officia. Est labore in magna ullamco ex Lorem culpa magna. Labore magna qui consequat nostrud est esse tempor.
+Server side of project help to simplify the process of employee clock in/clock out by scanning QR code.

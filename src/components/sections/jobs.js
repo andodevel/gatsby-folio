@@ -37,9 +37,11 @@ const StyledHighlight = styled.span`
 `;
 
 const StyledTabContent = styled.div`
+  overflow: hidden;
   position: relative;
   width: 100%;
-  height: auto;
+  min-height: 20rem;
+  height: 30rem;
   padding-top: 1.2rem;
   padding-left: 3rem;
   outline: 0;

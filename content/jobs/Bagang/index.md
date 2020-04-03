@@ -1,9 +1,9 @@
 ---
-date: '2019-01-01'
-title: 'Full-stack Engineer'
-company: 'Bagang'
-range: 'Jan 2019 - Jun 2019'
-url: 'https://bagang.com.vn'
+date: 2019-01-01
+title: Full-stack Engineer
+company: Bagang
+range: Jan 2019 - Jun 2019
+url: https://bagang.com.vn
 techs:
   - Java
   - SpringBoot

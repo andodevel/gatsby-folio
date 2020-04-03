@@ -1,5 +1,6 @@
 ---
-title: 'Get In Touch'
+title: Get In Touch
+contactText: Contact
 ---
 
-Officia exercitation consectetur consequat laboris eu occaecat reprehenderit ipsum esse tempor velit proident fugiat in. Cupidatat mollit quis pariatur anim ipsum sint. Aute mollit ipsum ullamco non.
+Feel free to drop a message if you want to talk about technical stuff and potential projects or just say hi. I'll try my best to get back to you soon.

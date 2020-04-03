@@ -1,9 +1,9 @@
 ---
-date: '2019-06-01'
-title: 'Full-stack Engineer'
-company: 'Codelink'
-range: 'Jun 2019 - Present'
-url: 'https://codelink.io'
+date: 2019-06-01
+title: Full-stack Engineer
+company: Codelink
+range: Jun 2019 - Present
+url: https://codelink.io
 techs:
   - Rails
   - GoLang

@@ -30,14 +30,14 @@ const StyledEmailLink = styled.a`
 const email = 'ando.devel@gmail.com';
 const Contact = ({ data }) => {
   const { frontmatter, html } = data[0].node;
-  const { title } = frontmatter;
+  const { title, contactText } = frontmatter;
 
   return (
     <StyledContainer id="contact">
       <StyledHeading>{title}</StyledHeading>
       <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
       <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-        Contact
+        {contactText}
       </StyledEmailLink>
     </StyledContainer>
   );
