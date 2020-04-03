@@ -8,17 +8,18 @@ const { colors, fontSizes, fonts } = Theme;
 const StyledContainer = styled(StyledFooter)`
   ${Mixins.flexBetween};
   flex-direction: row;
-  padding: 0px 20px;
+  padding: 0 2rem;
   background-color: ${colors.darkNavy};
   color: ${colors.slate};
   text-align: center;
   height: auto;
-  min-height: 40px;
+  min-height: 4rem;
+  box-shadow: 0 -0.3rem 0.5rem -0.3rem ${colors.headerBackground};
 `;
 const StyledSocial = styled.div`
   color: ${colors.lightSlate};
   width: 100%;
-  max-width: 270px;
+  max-width: 27rem;
 `;
 const StyledSocialList = styled.ul`
   ${Mixins.flexStart};
@@ -27,10 +28,10 @@ const StyledSocialList = styled.ul`
   list-style: none;
 `;
 const StyledSocialLink = styled.a`
-  padding: 0px 10px;
+  padding: 0 1rem;
   svg {
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 `;
 const StyledMetadata = styled.div`
@@ -40,21 +41,21 @@ const StyledMetadata = styled.div`
 `;
 const StyledGitHubLink = styled.a`
   color: ${colors.slate};
-  padding: 0px;
+  padding: 0;
 `;
 const StyledGitHubInfo = styled.div`
-  margin-top: 0px;
+  margin-top: 0;
 
   & > span {
     display: inline-flex;
     align-items: center;
-    margin: 0 7px;
+    margin: 0 0.7rem;
   }
   svg {
     display: inline-block;
-    height: 15px;
+    height: 1.5rem;
     width: auto;
-    margin-right: 5px;
+    margin-right: 0.5rem;
   }
 `;
 

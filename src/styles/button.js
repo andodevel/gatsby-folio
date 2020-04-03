@@ -5,7 +5,7 @@ const { colors, fontSizes, fonts } = Theme;
 const Button = styled.button`
   color: ${colors.green};
   background-color: transparent;
-  border: 0.1rem solid ${colors.component};
+  border: 1px solid ${colors.component};
   border-radius: ${Theme.borderRadius};
   font-size: ${fontSizes.smish};
   font-family: ${fonts.secondary};

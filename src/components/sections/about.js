@@ -14,23 +14,23 @@ const StyledFlexContainer = styled.div`
 `;
 const StyledContent = styled.div`
   width: 60%;
-  max-width: 480px;
+  max-width: 60rem;
   a {
     ${Mixins.link};
   }
 `;
 const SkillsContainer = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(2, minmax(14rem, 20rem));
   overflow: hidden;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 2rem 0 0 0;
   list-style: none;
 `;
 const Skill = styled.li`
   position: relative;
-  margin-bottom: 10px;
-  padding-left: 20px;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
   font-family: ${fonts.secondary};
   font-size: ${fontSizes.smish};
   color: ${colors.slate};
@@ -40,14 +40,14 @@ const Skill = styled.li`
     left: 0;
     color: ${colors.green};
     font-size: ${fontSizes.sm};
-    line-height: 12px;
+    line-height: 1.2rem;
   }
 `;
 const StyledPic = styled.div`
   position: relative;
   width: 40%;
-  max-width: 300px;
-  margin-left: 60px;
+  max-width: 30rem;
+  margin-left: 6rem;
   a {
     &:focus {
       outline: 0;
@@ -64,7 +64,7 @@ const StyledAvatarLink = styled.a`
   ${Mixins.boxShadow};
   width: 100%;
   position: relative;
-  margin-left: -20px;
+  margin-left: -2rem;
 `;
 
 const About = ({ data }) => {

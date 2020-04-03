@@ -64,7 +64,7 @@ const Mixins = {
       content: '';
       display: block;
       width: 0;
-      height: 2px;
+      height: 0.2rem;
       position: relative;
       left: 2rem;
       bottom: -0.2rem;
@@ -77,7 +77,7 @@ const Mixins = {
   smallButton: css`
     color: ${colors.component};
     background-color: transparent;
-    border: 0.1rem solid ${colors.component};
+    border: 1px solid ${colors.component};
     border-radius: ${Theme.borderRadius};
     padding: 0.75rem 1rem;
     font-size: ${fontSizes.smish};
@@ -97,7 +97,7 @@ const Mixins = {
   `,
 
   bigButton: css`
-    border: 0.1rem solid ${colors.button};
+    border: 1px solid ${colors.button};
     color: ${colors.buttonTxt};
     background-color: transparent;
     border-radius: ${Theme.borderRadius};
@@ -111,7 +111,7 @@ const Mixins = {
     &:hover,
     &:focus,
     &:active {
-      border: 0.1rem solid ${colors.buttonActive};
+      border: 1px solid ${colors.buttonActive};
       color: ${colors.buttonActiveTxt};
       background-color: ${colors.buttonActiveBg};
     }
@@ -125,12 +125,12 @@ const Mixins = {
   `,
 
   boxShadow: css`
-    box-shadow: 0 5px 20px -10px ${colors.shadow};
+    box-shadow: 0 0.5rem 2rem -1rem ${colors.shadow};
     transition: ${Theme.transition};
 
     &:hover,
     &:focus {
-      box-shadow: 0 8px 20px -10px ${colors.shadow};
+      box-shadow: 0 0.8rem 2rem -1rem ${colors.shadow};
     }
   `,
 

@@ -14,11 +14,11 @@ const StyledEmailLink = styled.a`
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  margin: 20px auto 0 auto;
+  margin: 2rem auto 0 auto;
 
   &:hover,
   &:focus {
-    transform: rotate(-180deg) translateY(3px);
+    transform: rotate(-180deg) translateY(0.3rem);
   }
 `;
 
@@ -31,7 +31,7 @@ const StyledResumeLink = styled.a`
 
   &:hover,
   &:focus {
-    transform: rotate(-180deg) translateY(3px);
+    transform: rotate(-180deg) translateY(0.3rem);
   }
 `;
 

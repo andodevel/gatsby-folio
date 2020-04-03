@@ -23,7 +23,7 @@ const Link = styled.a`
     content: '';
     display: block;
     width: 0;
-    height: 1px;
+    height: 0.1rem;
     position: relative;
     bottom: 0.37em;
     background-color: ${colors.component};

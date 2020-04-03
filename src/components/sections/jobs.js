@@ -6,7 +6,7 @@ const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
   position: relative;
-  max-width: 700px;
+  max-width: 70rem;
 `;
 const StyledTabs = styled.div`
   display: flex;
@@ -28,8 +28,8 @@ const StyledTabButton = styled.button`
   align-items: center;
   width: 100%;
   background-color: transparent;
-  height: ${Theme.tabHeight}px;
-  padding: 0 20px 2px;
+  height: ${Theme.tabHeight}rem;
+  padding: 0 2rem 0.2rem;
   transition: ${Theme.transition};
   text-align: left;
   white-space: nowrap;
@@ -40,26 +40,26 @@ const StyledTabButton = styled.button`
 const StyledHighlight = styled.span`
   display: block;
   background: ${colors.component5};
-  width: 2px;
-  height: ${Theme.tabHeight - 24}px;
+  width: 0.2rem;
+  height: ${Theme.tabHeight - 2.4}rem;
   border-radius: ${Theme.borderRadius};
   position: absolute;
-  top: 11px;
+  top: 1.1rem;
   left: 0;
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
   z-index: 5;
   transform: translateY(
-    ${props => (props.activeTabId > 0 ? props.activeTabId * Theme.tabHeight : 0)}px
+    ${props => (props.activeTabId > 0 ? props.activeTabId * Theme.tabHeight : 0)}rem
   );
 `;
 const StyledTabContent = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 12px;
-  padding-left: 30px;
-  outline: 0px;
+  padding-top: 1.2rem;
+  padding-left: 3rem;
+  outline: 0;
 
   ul {
     ${Mixins.ul};
@@ -72,7 +72,7 @@ const StyledJobTitle = styled.h4`
   color: ${colors.component};
   font-size: ${fontSizes.xxl};
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 `;
 const StyledCompany = styled.span`
   color: ${colors.component};
@@ -83,9 +83,9 @@ const StyledJobDetails = styled.h5`
   font-weight: normal;
   letter-spacing: 0.05em;
   color: ${colors.component};
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   svg {
-    width: 15px;
+    width: 1.5rem;
   }
 `;
 

@@ -22,7 +22,7 @@ const StyledSubtitle = styled.h2`
 `;
 const StyledHomeButton = styled(Link)`
   ${Mixins.bigButton};
-  margin-top: 40px;
+  margin-top: 4rem;
 `;
 
 const NotFoundPage = ({ location }) => (

@@ -17,15 +17,15 @@ const StyledContent = styled.div`
   grid-row: 1 / -1;
 `;
 const StyledProjectName = styled.h5`
-  font-size: 28px;
-  margin: 0 0 20px;
+  font-size: 2 0.8rem;
+  margin: 0 0 2rem;
   color: ${colors.component};
 `;
 const StyledDescription = styled.div`
   ${Mixins.boxShadow};
   position: relative;
   z-index: 2;
-  padding: 25px;
+  padding: 2.5rem;
   background-color: ${colors.headerBackground};
   font-size: ${fontSizes.lg};
   border-radius: ${Theme.borderRadius};
@@ -42,7 +42,7 @@ const StyledTechList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 25px 0 10px;
+  margin: 2.5rem 0 1rem;
   list-style: none;
 
   li {
@@ -51,7 +51,7 @@ const StyledTechList = styled.ul`
     color: ${colors.component};
     font-style: italic;
     margin-right: ${Theme.margin};
-    margin-bottom: 7px;
+    margin-bottom: 0.7rem;
     white-space: nowrap;
     &:last-of-type {
       margin-right: 0;
@@ -65,14 +65,14 @@ const StyledLinkWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: 10px;
-  margin-left: -10px;
+  margin-top: 1rem;
+  margin-left: -1rem;
   color: ${colors.component};
   a {
-    padding: 10px;
+    padding: 1rem;
     svg {
-      width: 22px;
-      height: 22px;
+      width: 2.2rem;
+      height: 2.2rem;
     }
   }
 `;
@@ -91,7 +91,7 @@ const StyledImgContainer = styled.a`
   grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-  border-radius: ${Theme.radius + 1}px;
+  border-radius: ${Theme.radius};
   transition: ${Theme.transition};
   &:hover,
   &:focus {
@@ -118,10 +118,10 @@ const StyledImgContainer = styled.a`
 `;
 const StyledProject = styled.div`
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -140,7 +140,7 @@ const StyledProject = styled.div`
     ${StyledLinkWrapper} {
       justify-content: flex-end;
       margin-left: 0;
-      margin-right: -10px;
+      margin-right: -1rem;
     }
     ${StyledImgContainer} {
       grid-column: 1 / 8;

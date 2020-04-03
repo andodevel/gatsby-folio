@@ -15,16 +15,16 @@ const StyledHeading = styled.h2`
   color: ${colors.component6};
 `;
 const StyledDescription = styled.div`
-  margin: 30px 0 0 20px;
+  margin: 3rem 0 0 2rem;
   width: 70%;
-  max-width: 1000px;
+  max-width: 60rem;
   a {
     ${Mixins.link};
   }
 `;
 const StyledEmailLink = styled.a`
   ${Mixins.bigButton};
-  margin-top: 50px;
+  margin-top: 5rem;
 `;
 
 const email = 'ando.devel@gmail.com';

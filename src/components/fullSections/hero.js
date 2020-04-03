@@ -11,7 +11,7 @@ const StyledContainer = styled(Section)`
   min-height: 100vh;
 `;
 const StyledOverline = styled.p`
-  margin: 0 0 10px 3px;
+  margin: 0 0 1rem 0.3rem;
   font-size: ${fontSizes.xl};
   font-family: ${fonts.secondary};
   font-weight: normal;
@@ -28,16 +28,16 @@ const StyledSubtitle = styled.h2`
   color: ${colors.component6};
 `;
 const StyledDescription = styled.div`
-  margin: 30px 0 0 20px;
+  margin: 3rem 0 0 2rem;
   width: 70%;
-  max-width: 600px;
+  max-width: 60rem;
   a {
     ${Mixins.link};
   }
 `;
 const StyledEmailLink = styled.a`
   ${Mixins.bigButton};
-  margin: 50px 0 0 5px;
+  margin: 5rem 0 0 0.5rem;
 `;
 
 const email = 'ando.devel@gmail.com';

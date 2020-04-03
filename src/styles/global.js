@@ -179,7 +179,7 @@ const Global = createGlobalStyle`
   blockquote {
     border-left-color: ${colors.green};
     border-left-style: solid;
-    border-left-width: 0.1rm;
+    border-left-width: 1px;
     margin-left: 0rem;
     margin-right: 0rem;
     padding-left: 1.5rem;
@@ -193,7 +193,7 @@ const Global = createGlobalStyle`
   hr {
     background-color: ${colors.darkGrey};
     height: 0.1rem;
-    border-width: 0rem;
+    border-width: 0;
     border-style: initial;
     border-color: initial;
     border-image: initial;

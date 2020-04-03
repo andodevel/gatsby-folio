@@ -46,12 +46,12 @@ const Theme = {
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
-  borderRadius: '5px',
+  borderRadius: '0.5px',
   margin: '2.0rem',
 
-  tabHeight: '42', // px
-  tabWidth: '12', // px
-  radius: '0.3rem',
+  tabHeight: '4.2', // rem
+  tabWidth: '1.2', // rem
+  radius: '3px',
 };
 
 export default Theme;
