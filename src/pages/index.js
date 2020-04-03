@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Jobs, Projects } from '@components';
+import { Layout, Hero, About, Jobs, Projects, Contact } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -20,6 +20,7 @@ const IndexPage = ({ location, data }) => (
         <About data={data.about.edges} />
         <Jobs data={data.jobs.edges} />
         <Projects data={data.projects.edges} />
+        <Contact data={data.contact.edges} />
       </StyledSectionGroupContainer>
     </StyledMainContainer>
   </Layout>
@@ -99,6 +100,16 @@ export const pageQuery = graphql`
             tech
             github
             external
+          }
+          html
+        }
+      }
+    }
+    contact: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
           }
           html
         }

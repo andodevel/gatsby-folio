@@ -13,7 +13,7 @@ const StyledContainer = styled(Section)`
 `;
 const StyledContent = styled.div`
   position: relative;
-  grid-column: 1 / 7;
+  grid-column: 1 / 8;
   grid-row: 1 / -1;
 `;
 const StyledProjectName = styled.h5`
@@ -127,7 +127,7 @@ const StyledProject = styled.div`
   }
   &:nth-of-type(odd) {
     ${StyledContent} {
-      grid-column: 7 / -1;
+      grid-column: 6 / -1;
       text-align: right;
     }
     ${StyledTechList} {

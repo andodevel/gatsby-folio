@@ -10,4 +10,4 @@ tech:
   - Puppepteer
 ---
 
-Url to PDF Generator which use Chrome headless under the hood.
+Officia sint id occaecat et. Dolore culpa pariatur laboris anim. Esse tempor proident adipisicing quis proident nisi proident eiusmod velit est do. Dolore sunt et fugiat commodo amet excepteur velit.
