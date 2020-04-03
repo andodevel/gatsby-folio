@@ -1,5 +1,5 @@
 ---
-date: '2020-02-01'
+date: '2020-03-01'
 title: 'url2pdf'
 cover: './cover.png'
 github: 'https://github.com/andodevel/url2pdf'
