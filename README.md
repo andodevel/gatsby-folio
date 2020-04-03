@@ -4,8 +4,11 @@
 <p align="center">
   This project is built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, Check out the <a href="https://andodevel.me" target="_blank">Live Preview</a>.
 </p>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2f0c5629-90ca-46c6-aa87-c23f760cbdfc/deploy-status)](https://app.netlify.com/sites/cocky-liskov-908dec/deploys)
+<p align="center">
+  <a href="https://app.netlify.com/sites/cocky-liskov-908dec/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/2f0c5629-90ca-46c6-aa87-c23f760cbdfc/deploy-status"" alt="Netlify Status" />
+  </a>
+</p>
 
 ![demo](./docs/preview.png)
 
