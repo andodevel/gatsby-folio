@@ -18,7 +18,6 @@ const StyledContainer = styled.div`
   z-index: 5;
   color: ${colors.primaryComponent};
   font-family: ${fonts.secondary};
-  font-weight: 550;
 
   &:before {
     content: '}';
@@ -26,7 +25,6 @@ const StyledContainer = styled.div`
     margin: 0 0 0.8rem 0.6rem;
     transform: rotate(-90deg);
     color: ${colors.primaryComponent};
-    font-weight: 550;
   }
 
   &:after {
@@ -35,7 +33,6 @@ const StyledContainer = styled.div`
     margin: 0.8rem 0 0 0.9rem;
     transform: rotate(90deg);
     color: ${colors.secondaryComponent};
-    font-weight: 550;
   }
 `;
 

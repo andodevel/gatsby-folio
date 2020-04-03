@@ -40,6 +40,8 @@ const Theme = {
   width: {
     fullDescription: '70%',
     maxFullDescription: '90rem',
+    sectionWidth: '80%',
+    sectionMaxWidth: '100rem',
   },
 
   fonts: {

@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import Theme from './theme';
-const { colors, fonts } = Theme;
+const { colors, fontSizes, fonts } = Theme;
 
 const Mixins = {
   flexStart: css`
@@ -54,13 +54,20 @@ const Mixins = {
   `,
 
   tabButton: css`
+    background-color: transparent;
+    height: ${Theme.tabHeight}rem;
     border: 0 !important;
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
+    color: ${colors.primaryComponent};
     position: relative;
     transition: ${Theme.transition};
+    padding: 0 2rem 0.2rem;
+    text-align: left;
+    white-space: nowrap;
+    font-family: ${fonts.secondary};
+    font-size: ${fontSizes.lg};
     cursor: pointer;
     &:hover,
     &:active,
@@ -68,6 +75,20 @@ const Mixins = {
       color: ${colors.primaryComponentActive};
       outline: 0;
     }
+  `,
+
+  tabButtonHighlight: css`
+    display: block;
+    background: ${colors.indicator};
+    width: 0.2rem;
+    height: ${Theme.tabHeight - 2.4}rem;
+    border-radius: ${Theme.borderRadius};
+    position: absolute;
+    top: 1.1rem;
+    left: 0;
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.1s;
+    z-index: 5;
   `,
 
   link: css`
@@ -80,12 +101,14 @@ const Mixins = {
     color: ${colors.link};
     &:hover {
       color: ${colors.linkActive};
+      font-weight: 600 !important;
       outline: 0;
       &:after {
         width: 50%;
       }
       & > * {
         color: ${colors.linkActive} !important;
+        font-weight: 600 !important;
         transition: ${Theme.transition};
       }
     }

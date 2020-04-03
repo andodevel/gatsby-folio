@@ -61,6 +61,7 @@ const Global = createGlobalStyle`
   h6 {
     margin: 0;
     line-height: 1.1;
+    font-weight: 500;
   }
 
   h1 {
@@ -117,7 +118,7 @@ const Global = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.primaryComponent};
+      color: ${colors.primaryComponentActive};
     }
   }
 

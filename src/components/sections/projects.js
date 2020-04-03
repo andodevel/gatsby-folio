@@ -4,23 +4,26 @@ import Img from 'gatsby-image';
 import Icon from '../icon';
 import styled from 'styled-components';
 import { Theme, Mixins, Section } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+
+const { colors, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
   ${Mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
 `;
+
 const StyledContent = styled.div`
   position: relative;
   grid-column: 1 / 8;
   grid-row: 1 / -1;
 `;
-const StyledProjectName = styled.h5`
+
+const StyledProjectName = styled.h6`
   margin: 0 0 2rem;
-  color: ${colors.primaryComponent};
-  font-weight: 500;
+  color: ${colors.primaryComponentActive};
 `;
+
 const StyledDescription = styled.div`
   ${Mixins.boxShadow};
   position: relative;
@@ -32,9 +35,10 @@ const StyledDescription = styled.div`
     margin: 0;
   }
   a {
-    ${Mixins.inlineLink};
+    ${Mixins.link};
   }
 `;
+
 const StyledTechList = styled.ul`
   position: relative;
   z-index: 2;
@@ -46,7 +50,6 @@ const StyledTechList = styled.ul`
 
   li {
     font-family: ${fonts.secondary};
-    font-size: ${fontSizes.xl};
     color: ${colors.primaryComponent};
     font-style: italic;
     margin-right: ${Theme.margin};
@@ -60,13 +63,14 @@ const StyledTechList = styled.ul`
     }
   }
 `;
+
 const StyledLinkWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
   margin-top: 1rem;
   margin-left: -1rem;
-  color: ${colors.primaryComponent};
+
   a {
     padding: 1rem;
     svg {
@@ -74,7 +78,12 @@ const StyledLinkWrapper = styled.div`
       height: 2.2rem;
     }
   }
+  &:hover,
+  &:focus {
+    color: ${colors.primaryComponenActive};
+  }
 `;
+
 const StyledProjectsImg = styled(Img)`
   width: 100%;
   max-width: 100%;
@@ -84,6 +93,7 @@ const StyledProjectsImg = styled(Img)`
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(80%);
 `;
+
 const StyledImgContainer = styled.a`
   ${Mixins.boxShadow};
   grid-column: 6 / -1;
@@ -115,6 +125,7 @@ const StyledImgContainer = styled.a`
     mix-blend-mode: screen;
   }
 `;
+
 const StyledProject = styled.div`
   display: grid;
   grid-gap: 1rem;
@@ -163,19 +174,7 @@ const Projects = ({ data }) => {
             return (
               <StyledProject key={i}>
                 <StyledContent>
-                  <StyledProjectName>
-                    {external ? (
-                      <a
-                        href={external}
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        aria-label="External Link">
-                        {title}
-                      </a>
-                    ) : (
-                      title
-                    )}
-                  </StyledProjectName>
+                  <StyledProjectName>{title}</StyledProjectName>
                   <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
                   {tech && (
                     <StyledTechList>

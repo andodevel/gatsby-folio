@@ -21,6 +21,7 @@ const StyledEmailLink = styled.a`
   &:focus {
     transform: rotate(-180deg) translateY(0.3rem);
     color: ${colors.primaryComponentActive};
+    font-weight: 600;
   }
 `;
 
