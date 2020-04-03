@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import Theme from './theme';
-import Mixins from './mixins';
 const { colors, fontSizes, fonts } = Theme;
 
 const Global = createGlobalStyle`
@@ -44,7 +43,7 @@ const Global = createGlobalStyle`
   }
 
   ::selection {
-    background-color: ${colors.highlight};
+    background-color: ${colors.component};
   }
 
   #root {
@@ -61,7 +60,7 @@ const Global = createGlobalStyle`
   h5,
   h6 {
     font-weight: 600;
-    color: ${colors.lightestSlate};
+    color: ${colors.component};
     margin: 0 0 1rem 0;
   }
 
@@ -108,7 +107,7 @@ const Global = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.component};
     }
   }
 
@@ -119,133 +118,10 @@ const Global = createGlobalStyle`
 
     &:focus,
     &:active {
-      outline-color: ${colors.blue};
+      outline-color: ${colors.component};
     }
   }
 
-  input, textarea {
-    border-radius: 0;
-    outline: 0;
-
-    &:focus {
-      outline: 0;
-    }
-    &::placeholder {
-    }
-    &:focus,
-    &:active {
-      &::placeholder {
-        opacity: 0.5;
-      }
-    }
-  }
-
-  p {
-    margin: 0 0 1.5rem 0;
-
-    & > a {
-      ${Mixins.link};
-    }
-
-    & > code {
-      background-color: ${colors.lightNavy};
-      color: ${colors.offWhite};
-      font-size: ${fontSizes.sm};
-      border-radius: ${Theme.borderRadius};
-      padding: 0.3em 0.5em;
-    }
-  }
-
-  ul {
-    &.fancy-list {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      font-size: ${fontSizes.lg};
-      li {
-        position: relative;
-        padding-left: 3rem;
-        margin-bottom: 1rem;
-        &:before {
-          content: '▹';
-          position: absolute;
-          left: 0;
-          color: ${colors.green};
-        }
-      }
-    }
-  }
-
-  blockquote {
-    border-left-color: ${colors.green};
-    border-left-style: solid;
-    border-left-width: 1px;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    padding-left: 1.5rem;
-
-    p {
-      font-style: italic;
-      font-size: 2.4rem;
-    }
-  }
-
-  hr {
-    background-color: ${colors.darkGrey};
-    height: 0.1rem;
-    border-width: 0;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    margin: 1rem;
-  }
-
-  code {
-    font-family: ${fonts.secondary};
-    font-size: ${fontSizes.md};
-  }
-
-  .overline {
-    color: ${colors.green};
-    font-family: ${fonts.secondary};
-    font-size: ${fontSizes.md};
-    font-weight: normal;
-  }
-
-  .subtitle {
-    color: ${colors.green};
-    margin: 0 0 2rem 0;
-    font-size: ${fontSizes.md};
-    font-family: ${fonts.secondary};
-    font-weight: normal;
-    line-height: 1.5;
-    a {
-      ${Mixins.link};
-      line-height: 1.5;
-    }
-  }
-
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5rem;
-    color: ${colors.green};
-
-    .arrow {
-      display: block;
-      margin-right: 1rem;
-      padding-top: 0.4rem;
-    }
-    a {
-      ${Mixins.link};
-      font-family: ${fonts.secondary};
-      font-size: ${fontSizes.sm};
-      font-weight: bold;
-      line-height: 1.5;
-      text-transform: uppercase;
-      letter-spacing: 0.1;
-    }
-  }
 
   .gatsby-image-outer-wrapper {
     height: 100%;

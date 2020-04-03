@@ -23,7 +23,7 @@ const StyledTabList = styled.ul`
   list-style: none;
 `;
 const StyledTabButton = styled.button`
-  ${Mixins.li};
+  ${Mixins.tabButton};
   display: flex;
   align-items: center;
   width: 100%;

@@ -25,7 +25,25 @@ const Mixins = {
     outline: 0.1rem solid red;
   `,
 
-  li: css`
+  ul: css`
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: ${fontSizes.lg};
+    li {
+      position: relative;
+      padding-left: 3rem;
+      margin-bottom: 1rem;
+      &:before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: ${colors.component};
+      }
+    }
+  `,
+
+  tabButton: css`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -74,28 +92,6 @@ const Mixins = {
     }
   `,
 
-  smallButton: css`
-    color: ${colors.component};
-    background-color: transparent;
-    border: 1px solid ${colors.component};
-    border-radius: ${Theme.borderRadius};
-    padding: 0.75rem 1rem;
-    font-size: ${fontSizes.smish};
-    font-family: ${fonts.secondary};
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: ${Theme.transition};
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: ${colors.component};
-    }
-    &:after {
-      display: none !important;
-    }
-  `,
-
   bigButton: css`
     border: 1px solid ${colors.button};
     color: ${colors.buttonTxt};
@@ -131,24 +127,6 @@ const Mixins = {
     &:hover,
     &:focus {
       box-shadow: 0 0.8rem 2rem -1rem ${colors.shadow};
-    }
-  `,
-
-  ul: css`
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: ${fontSizes.lg};
-    li {
-      position: relative;
-      padding-left: 3rem;
-      margin-bottom: 1rem;
-      &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: ${colors.component};
-      }
     }
   `,
 };
