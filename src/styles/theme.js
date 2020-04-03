@@ -3,17 +3,23 @@ import Fonts from './fonts';
 
 const Theme = {
   colors: {
-    // Button
-    btn: `${Colors.orange1}`,
-    btnActive: `${Colors.orange2}`,
-
     // 404
-    errPage: `${Colors.yellow1}`,
+    errPage: `${Colors.orange1}`,
+
+    // Button
+    button: `${Colors.orange1}`,
+    buttonActive: `${Colors.orange2}`,
+
+    // Link
+    link: `${Colors.blue1}`,
+    linkActive: `${Colors.aqua1}`,
+
+    // Background
+    primaryBackground: `${Colors.bg}`,
+    secondaryBackground: `${Colors.bg1}`,
 
     primary: `${Colors.fg0}`,
-    background: `${Colors.bg}`,
     text: `${Colors.fg}`,
-    link: `${Colors.green2}`,
     component: `${Colors.orange1}`,
     component2: `${Colors.blue1}`,
     component3: `${Colors.purple1}`,
@@ -22,9 +28,12 @@ const Theme = {
     component6: `${Colors.orange1}`,
     component7: `${Colors.fg0}`,
     shadow: `${Colors.bg4}`,
-    headerBackground: `${Colors.bg1}`,
-    footerBackground: `${Colors.bg1}`,
     sectionHeading: `${Colors.aqua1}`,
+  },
+
+  width: {
+    fullDescription: '70%',
+    maxFullDescription: '90rem',
   },
 
   fonts: {
@@ -48,12 +57,12 @@ const Theme = {
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
-  borderRadius: '3px',
+  radius: '5px',
+  borderRadius: '5px',
   margin: '2.0rem',
 
   tabHeight: '4.2', // rem
   tabWidth: '1.2', // rem
-  radius: '3px',
 };
 
 export default Theme;

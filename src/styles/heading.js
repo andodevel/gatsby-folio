@@ -15,12 +15,14 @@ const Heading = styled.h3`
   &:after {
     content: '';
     display: block;
-    height: 0.1rem;
     width: 30rem;
-    background-color: ${colors.headerBackground};
+    height: 0.1rem;
     position: relative;
-    top: -0.5rem;
-    margin-left: 2rem;
+    left: 2rem;
+    bottom: -1rem;
+    background-color: ${colors.sectionHeading};
+    transition: ${Theme.transition};
+    opacity: 0.8;
   }
 `;
 

@@ -7,7 +7,7 @@ import { Theme, Mixins, Main } from '@styles';
 const { colors } = Theme;
 
 const StyledMainContainer = styled(Main)`
-  ${Mixins.centerScreen};
+  ${Mixins.fullScreen};
   color: ${colors.errPage};
 `;
 
@@ -24,7 +24,7 @@ const StyledSubtitle = styled.h2`
 `;
 
 const StyledHomeButton = styled(Link)`
-  ${Mixins.bigButton};
+  ${Mixins.button};
   margin-top: 4rem;
 `;
 

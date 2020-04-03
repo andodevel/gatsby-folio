@@ -21,14 +21,15 @@ const Mixins = {
     align-items: center;
   `,
 
-  centerScreen: css`
+  fullScreen: css`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 100%;
-    height: 100wh;
+    min-height: 100vh;
+    height: 100vh;
   `,
 
   outline: css`
@@ -54,6 +55,7 @@ const Mixins = {
   `,
 
   tabButton: css`
+    border: 0 !important;
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -78,13 +80,13 @@ const Mixins = {
     cursor: pointer;
     color: ${colors.link};
     &:hover {
-      color: ${colors.link};
+      color: ${colors.linkActive};
       outline: 0;
       &:after {
         width: 50%;
       }
       & > * {
-        color: ${colors.link} !important;
+        color: ${colors.linkActive} !important;
         transition: ${Theme.transition};
       }
     }
@@ -96,19 +98,18 @@ const Mixins = {
       position: relative;
       left: 2rem;
       bottom: -0.2rem;
-      background-color: ${colors.link};
+      background-color: ${colors.linkActive};
       transition: ${Theme.transition};
       opacity: 0.8;
     }
   `,
 
-  bigButton: css`
-    border: 1px solid ${colors.btn};
-    color: ${colors.btn};
+  button: css`
+    border: 1px solid ${colors.button};
+    color: ${colors.button};
     background-color: transparent;
     border-radius: ${Theme.borderRadius};
     padding: 1.25rem 1.75rem;
-    font-size: ${fontSizes.sm};
     font-family: ${fonts.secondary};
     line-height: 1;
     text-decoration: none;
@@ -117,9 +118,9 @@ const Mixins = {
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid ${colors.background};
-      color: ${colors.background};
-      background-color: ${colors.btnActive};
+      border: 1px solid ${colors.primaryBackground};
+      color: ${colors.primaryBackground};
+      background-color: ${colors.buttonActive};
     }
     &:after {
       display: none !important;

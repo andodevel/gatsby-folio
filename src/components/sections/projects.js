@@ -26,7 +26,7 @@ const StyledDescription = styled.div`
   position: relative;
   z-index: 2;
   padding: 2.5rem;
-  background-color: ${colors.headerBackground};
+  background-color: ${colors.secondaryBackground};
   font-size: ${fontSizes.lg};
   border-radius: ${Theme.borderRadius};
   p {

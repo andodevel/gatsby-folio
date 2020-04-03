@@ -2,28 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Theme, Mixins, Section } from '@styles';
-const { colors } = Theme;
+const { colors, width } = Theme;
 
 const StyledContainer = styled(Section)`
-  ${Mixins.flexCenter};
-  flex-direction: column;
-  min-height: 100vh;
+  ${Mixins.fullScreen};
 `;
+
 const StyledHeading = styled.h2`
   font-size: 4rem;
   line-height: 1.1;
   color: ${colors.component6};
 `;
+
 const StyledDescription = styled.div`
   margin: 3rem 0 0 2rem;
-  width: 70%;
-  max-width: 60rem;
+  width: ${width.fullDescription};
+  max-width: ${width.maxFullDescription};
   a {
     ${Mixins.link};
   }
 `;
+
 const StyledEmailLink = styled.a`
-  ${Mixins.bigButton};
+  ${Mixins.button};
   margin-top: 5rem;
 `;
 

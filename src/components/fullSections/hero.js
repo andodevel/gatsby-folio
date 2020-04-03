@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme, Mixins, Section } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+const { colors, fontSizes, fonts, width } = Theme;
 
 const StyledContainer = styled(Section)`
-  ${Mixins.flexCenter};
-  flex-direction: column;
-  min-height: 100vh;
+  ${Mixins.fullScreen};
 `;
+
 const StyledOverline = styled.p`
   margin: 0 0 1rem 0.3rem;
   font-size: ${fontSizes.xl};
@@ -29,14 +28,14 @@ const StyledSubtitle = styled.h2`
 `;
 const StyledDescription = styled.div`
   margin: 3rem 0 0 2rem;
-  width: 70%;
-  max-width: 60rem;
+  width: ${width.fullDescription};
+  max-width: ${width.maxFullDescription};
   a {
     ${Mixins.link};
   }
 `;
 const StyledEmailLink = styled.a`
-  ${Mixins.bigButton};
+  ${Mixins.button};
   margin: 5rem 0 0 0.5rem;
 `;
 

@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 import Theme from './theme';
+import Bar from './bar';
 
 const { colors } = Theme;
 
 const Footer = styled.footer`
-  position: fixed;
-  left: 0;
+  ${Bar};
   bottom: 0;
-  width: 100%;
-  background-color: ${colors.footerBackground};
-  font-size: 1.3rem;
-  z-index: 10;
+  box-shadow: 0 -0.3rem 0.5rem -0.3rem ${colors.secondaryBackground};
 `;
 
 export default Footer;

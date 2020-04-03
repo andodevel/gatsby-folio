@@ -3,52 +3,23 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { Theme, Mixins } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+import { Theme, Mixins, Header as StyledHeader } from '@styles';
+const { fonts } = Theme;
 
-const StyledContainer = styled.header`
-  ${Mixins.flexBetween};
-  position: fixed;
-  top: 0;
-  padding: 0 2rem;
-  background-color: ${colors.headerBackground};
-  transition: ${Theme.transition};
-  z-index: 10;
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  width: 100%;
-  height: auto;
-  min-height: 4rem;
-  box-shadow: 0 0.3rem 0.5rem -0.3rem ${colors.headerBackground};
-`;
+const StyledContainer = styled(StyledHeader)``;
 
 const StyledNav = styled.nav`
   ${Mixins.flexBetween};
   position: relative;
   width: 100%;
-  color: ${colors.component};
-  font-family: ${fonts.secondary};
-  z-index: 10;
 `;
 
 const StyledLogo = styled.div`
   ${Mixins.flexCenter};
+  font-family: ${fonts.primary};
   a {
-    font-weight: 600;
+    font-weight: 500;
     display: block;
-    color: ${colors.component};
-    &:hover,
-    &:focus {
-      svg {
-        fill: ${colors.component};
-      }
-    }
-    svg {
-      fill: none;
-      transition: ${Theme.transition};
-      user-select: none;
-    }
   }
 `;
 
@@ -67,7 +38,6 @@ const StyledList = styled.ol`
 const StyledListItem = styled.li`
   margin: 0 0.5rem;
   position: relative;
-  font-size: ${fontSizes.smish};
 `;
 
 const StyledListLink = styled(Link)`

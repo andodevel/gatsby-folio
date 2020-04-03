@@ -22,7 +22,7 @@ const Global = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.background};
+    background-color: ${colors.primaryBackground};
     color: ${colors.primary};
     line-height: 1.3;
     font-family: ${fonts.primary};
