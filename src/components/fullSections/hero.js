@@ -9,9 +9,6 @@ const StyledContainer = styled(Section)`
   ${Mixins.flexCenter};
   flex-direction: column;
   min-height: 100vh;
-  div {
-    width: 100%;
-  }
 `;
 const StyledOverline = styled.p`
   margin: 0 0 10px 3px;
@@ -24,15 +21,6 @@ const StyledTitle = styled.h1`
   font-size: 8rem;
   line-height: 1.5;
   margin: 0;
-
-  &:before {
-    color: ${colors.primary};
-    content: "I'm";
-    font-family: ${fonts.secondary};
-    font-weight: normal;
-    font-size: ${fontSizes.xl};
-    padding-right: 3rem;
-  }
 `;
 const StyledSubtitle = styled.h2`
   font-size: 4rem;
@@ -41,7 +29,7 @@ const StyledSubtitle = styled.h2`
 `;
 const StyledDescription = styled.div`
   margin: 30px 0 0 20px;
-  width: 50%;
+  width: 70%;
   max-width: 600px;
   a {
     ${Mixins.link};

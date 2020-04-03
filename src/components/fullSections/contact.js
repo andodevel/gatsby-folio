@@ -1,26 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Theme, Mixins, Section, Heading } from '@styles';
-const { colors, fontSizes } = Theme;
+import { Theme, Mixins, Section } from '@styles';
+const { colors } = Theme;
 
 const StyledContainer = styled(Section)`
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 100px;
-  a {
-    ${Mixins.inlineLink};
-  }
+  ${Mixins.flexCenter};
+  flex-direction: column;
+  min-height: 100vh;
 `;
-const StyledHeading = styled(Heading)`
-  display: block;
-  color: ${colors.component};
-  font-size: ${fontSizes.h1};
-  font-weight: normal;
-  margin-bottom: 20px;
-  justify-content: center;
-  &:after {
-    display: none;
+const StyledHeading = styled.h2`
+  font-size: 4rem;
+  line-height: 1.1;
+  color: ${colors.component6};
+`;
+const StyledDescription = styled.div`
+  margin: 30px 0 0 20px;
+  width: 70%;
+  max-width: 1000px;
+  a {
+    ${Mixins.link};
   }
 `;
 const StyledEmailLink = styled.a`
@@ -36,8 +35,7 @@ const Contact = ({ data }) => {
   return (
     <StyledContainer id="contact">
       <StyledHeading>{title}</StyledHeading>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-
+      <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
       <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
         Contact
       </StyledEmailLink>
