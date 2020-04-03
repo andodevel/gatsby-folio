@@ -8,8 +8,7 @@ const StyledContainer = styled(Section)`
   ${Mixins.fullScreen};
 `;
 
-const StyledHeading = styled.h2`
-  font-size: 4rem;
+const StyledHeading = styled.h3`
   line-height: 1.1;
   color: ${colors.primaryComponent};
 `;

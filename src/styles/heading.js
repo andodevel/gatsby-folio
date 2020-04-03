@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Theme from './theme';
-const { colors, fontSizes } = Theme;
+const { colors } = Theme;
 
 const Heading = styled.h3`
   color: ${colors.sectionHeading};
@@ -10,7 +10,6 @@ const Heading = styled.h3`
   margin: 1rem 0rem 4rem;
   width: 100%;
   white-space: nowrap;
-  font-size: ${fontSizes.h4};
 
   &:after {
     content: '';
@@ -22,7 +21,6 @@ const Heading = styled.h3`
     bottom: -1rem;
     background-color: ${colors.sectionHeading};
     transition: ${Theme.transition};
-    opacity: 0.8;
   }
 `;
 

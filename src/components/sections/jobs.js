@@ -6,7 +6,6 @@ const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
   position: relative;
-  max-width: 70rem;
 `;
 const StyledTabs = styled.div`
   display: flex;
@@ -17,7 +16,6 @@ const StyledTabList = styled.ul`
   display: block;
   position: relative;
   width: max-content;
-  z-index: 3;
   padding: 0;
   margin: 0;
   list-style: none;

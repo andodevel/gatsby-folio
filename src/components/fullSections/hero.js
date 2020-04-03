@@ -15,12 +15,10 @@ const StyledOverline = styled.p`
   font-weight: normal;
 `;
 const StyledTitle = styled.h1`
-  font-size: 8rem;
   line-height: 1.5;
   margin: 0;
 `;
-const StyledSubtitle = styled.h2`
-  font-size: 4rem;
+const StyledSubtitle = styled.h4`
   line-height: 1.1;
   color: ${colors.primaryComponent};
 `;

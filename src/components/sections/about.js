@@ -13,8 +13,7 @@ const StyledFlexContainer = styled.div`
   align-items: flex-start;
 `;
 const StyledContent = styled.div`
-  width: 60%;
-  max-width: 60rem;
+  width: 67%;
   a {
     ${Mixins.link};
   }
@@ -43,9 +42,8 @@ const Skill = styled.li`
 `;
 const StyledPic = styled.div`
   position: relative;
-  width: 40%;
-  max-width: 30rem;
-  margin-left: 6rem;
+  width: 30%;
+  margin-right: 0;
   a {
     &:focus {
       outline: 0;
@@ -62,7 +60,6 @@ const StyledAvatarLink = styled.a`
   ${Mixins.boxShadow};
   width: 100%;
   position: relative;
-  margin-left: -2rem;
 `;
 
 const About = ({ data }) => {

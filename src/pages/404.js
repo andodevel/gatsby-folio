@@ -13,14 +13,10 @@ const StyledMainContainer = styled(Main)`
 
 const StyledTitle = styled.h1`
   color: ${colors.errPage};
-  font-size: 10vw;
-  line-height: 1;
 `;
 
 const StyledSubtitle = styled.h2`
   color: ${colors.errPage};
-  font-size: 3vw;
-  font-weight: 400;
 `;
 
 const StyledHomeButton = styled(Link)`
