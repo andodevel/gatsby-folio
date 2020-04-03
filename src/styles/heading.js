@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Theme from './theme';
 const { colors } = Theme;
 
-const Heading = styled.h3`
+const Heading = styled.h4`
   color: ${colors.sectionHeading};
   position: relative;
   display: flex;

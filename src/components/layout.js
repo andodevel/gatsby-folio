@@ -20,7 +20,7 @@ const StyledContent = styled.div`
   min-height: 100vh;
 `;
 
-const Layout = ({ seoTitle, children }) => {
+const Layout = ({ seoTitle, children, location }) => {
   const isHome = location.pathname === '/';
 
   const data = useStaticQuery(graphql`
@@ -62,6 +62,7 @@ const Layout = ({ seoTitle, children }) => {
 Layout.propTypes = {
   seoTitle: PropTypes.string,
   children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export default Layout;

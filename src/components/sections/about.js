@@ -33,8 +33,9 @@ const Skill = styled.li`
   font-family: ${fonts.secondary};
   color: ${colors.slate};
   &:before {
-    content: '→';
+    content: '⟢';
     position: absolute;
+    top: 0.5rem;
     left: 0;
     color: ${colors.indicator};
     line-height: 1.2rem;
