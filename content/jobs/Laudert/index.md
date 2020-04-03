@@ -3,9 +3,13 @@ date: '2016-06-01'
 title: 'Print Solution Engineer'
 company: 'Laudert'
 range: 'Jun 2016 - Dec 2018'
-url: 'https://example.com'
+url: 'https://www.laudert.com/'
+tech:
+  - JEE
+  - MySQL
+  - PIM
+  - inDesign
 ---
 
-- Deserunt laborum duis proident irure nostrud exercitation et laboris in eiusmod.
-- Aliquip fugiat nostrud nisi exercitation.
-- Labore ad id Lorem qui velit. Ut ullamco ad incididunt reprehenderit nostrud id duis laboris id ad occaecat. Non consequat nulla est proident. Fugiat ut culpa elit sunt laboris consequat adipisicing et deserunt sint magna. Veniam enim consequat deserunt enim exercitation nisi excepteur irure veniam laboris duis sunt occaecat.
+- Created Print Media from a variety of Java enterprise databases and PIM systems with EJB applications that worked as publication servers with automation inDesign as frontend.
+- Developed additional products to boost development: a GoLang reverse proxy to debug/hijack request, a framework to fix and enhance 3rd-party applications, and lots of tools to improve our workflow.

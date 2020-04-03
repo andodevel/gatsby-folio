@@ -3,9 +3,15 @@ date: '2019-01-01'
 title: 'Full-stack Engineer'
 company: 'Bagang'
 range: 'Jan 2019 - Jun 2019'
-url: 'https://example.com'
+url: 'https://bagang.com.vn'
+tech:
+  - Java
+  - SpringBoot
+  - ReactJS
+  - Dubbo
+  - Docker
+  - K8s
 ---
 
-- Deserunt laborum duis proident irure nostrud exercitation et laboris in eiusmod.
-- Aliquip fugiat nostrud nisi exercitation.
-- Labore ad id Lorem qui velit. Ut ullamco ad incididunt reprehenderit nostrud id duis laboris id ad occaecat. Non consequat nulla est proident. Fugiat ut culpa elit sunt laboris consequat adipisicing et deserunt sint magna. Veniam enim consequat deserunt enim exercitation nisi excepteur irure veniam laboris duis sunt occaecat.
+- The mobile app gives fast and easy personal loan.
+- I worked as a full-stack developer of backend service, includes cloud microservices and internal web system to support operation team proceed user's application for loan.
