@@ -42,7 +42,7 @@ const Layout = ({ seoTitle, children, location }) => {
       <StyledContent>
         {isHome && (
           <>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header siteTitle={data.site.siteMetadata.title} isHome={isHome} />
             <LeftBreadcumb />
           </>
         )}

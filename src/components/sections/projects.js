@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import Icon from '../icon';
 import styled from 'styled-components';
-import { Theme, Mixins, Section, Heading } from '@styles';
+import { Theme, Mixins, Section } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
@@ -152,7 +152,7 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer id="projects">
-      <Heading>My projects</Heading>
+      <h4 className="heading">My projects</h4>
 
       <div>
         {featuredProjects &&

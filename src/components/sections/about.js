@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import { Theme, Mixins, Section, Heading } from '@styles';
+import { Theme, Mixins, Section } from '@styles';
 const { colors, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
@@ -70,7 +70,8 @@ const About = ({ data }) => {
 
   return (
     <StyledContainer id="about" ref={revealContainer}>
-      <Heading>{title}</Heading>
+      <h4 className="heading">{title}</h4>
+
       <StyledFlexContainer>
         <StyledContent>
           <div dangerouslySetInnerHTML={{ __html: html }} />

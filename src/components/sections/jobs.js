@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Theme, Mixins, Section, Heading } from '@styles';
+import { Theme, Mixins, Section } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
@@ -93,7 +93,8 @@ const Jobs = ({ data }) => {
 
   return (
     <StyledContainer id="jobs">
-      <Heading>Working history</Heading>
+      <h4 className="heading">Working history</h4>
+
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs">
           {data &&

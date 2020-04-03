@@ -63,7 +63,7 @@ const navLinks = [
   },
 ];
 
-const Header = () => {
+const Header = ({ isHome }) => {
   const timeout = 3000;
   const fadeClass = 'fade';
   const fadeDownClass = 'fadedown';
@@ -74,7 +74,7 @@ const Header = () => {
         <TransitionGroup component={null}>
           <CSSTransition classNames={fadeClass} timeout={timeout}>
             <StyledLogo tabindex="-1">
-              <a href="/" aria-label="home">
+              <a href={isHome ? '/#' : '/'} aria-label="home">
                 Home
               </a>
             </StyledLogo>
@@ -102,10 +102,12 @@ const Header = () => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  isHome: PropTypes.bool,
 };
 
 Header.defaultProps = {
   siteTitle: ``,
+  isHome: false,
 };
 
 export default Header;
