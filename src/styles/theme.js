@@ -21,19 +21,20 @@ const Theme = {
     // Section
     sectionHeading: `${Colors.blue1}`,
 
-    // shadow
+    // Shadow
     primaryShadow: `${Colors.orange2}`,
     secondaryShadow: `${Colors.bg1}`,
 
-    primary: `${Colors.fg0}`,
-    text: `${Colors.fg}`,
-    component: `${Colors.orange1}`,
-    component2: `${Colors.blue1}`,
-    component3: `${Colors.purple1}`,
-    component4: `${Colors.green1}`,
-    component5: `${Colors.red1}`,
-    component6: `${Colors.orange1}`,
-    component7: `${Colors.fg0}`,
+    // Content
+    primaryForeground: `${Colors.fg0}`,
+    secondaryForeground: `${Colors.fg1}`,
+
+    // Component
+    primaryComponent: `${Colors.orange1}`,
+    primaryComponentActive: `${Colors.orange2}`,
+    secondaryComponent: `${Colors.blue1}`,
+    secondaryComponentActive: `${Colors.blue2}`,
+    indicator: `${Colors.red1}`,
   },
 
   width: {

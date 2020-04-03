@@ -27,7 +27,7 @@ const StyledResumeLink = styled.a`
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  color: ${colors.component2};
+  color: ${colors.secondaryComponent};
 
   &:hover,
   &:focus {

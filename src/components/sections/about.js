@@ -55,7 +55,7 @@ const StyledPic = styled.div`
 const StyledAvatar = styled(Img)`
   position: relative;
   border-radius: ${Theme.borderRadius};
-  border: 1px solid ${colors.component};
+  border: 1px solid ${colors.primaryComponent};
   transition: ${Theme.transition};
 `;
 const StyledAvatarLink = styled.a`

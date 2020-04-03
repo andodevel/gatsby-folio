@@ -35,11 +35,11 @@ const StyledTabButton = styled.button`
   white-space: nowrap;
   font-family: ${fonts.secondary};
   font-size: ${fontSizes.xl};
-  color: ${props => (props.isActive ? colors.component2 : colors.component3)};
+  color: ${props => (props.isActive ? colors.primaryComponentActive : colors.primaryComponent)};
 `;
 const StyledHighlight = styled.span`
   display: block;
-  background: ${colors.component5};
+  background: ${colors.indicator};
   width: 0.2rem;
   height: ${Theme.tabHeight - 2.4}rem;
   border-radius: ${Theme.borderRadius};
@@ -68,21 +68,21 @@ const StyledTabContent = styled.div`
     ${Mixins.link};
   }
 `;
-const StyledJobTitle = styled.h4`
-  color: ${colors.component};
+const StyledJobTitle = styled.span`
+  color: ${colors.primaryComponent};
   font-size: ${fontSizes.xxl};
   font-weight: 500;
   margin-bottom: 0.5rem;
 `;
 const StyledCompany = styled.span`
-  color: ${colors.component};
+  color: ${colors.primaryComponent};
 `;
 const StyledJobDetails = styled.div`
   font-family: ${fonts.secondary};
   font-size: ${fontSizes.sm};
   font-weight: normal;
   letter-spacing: 0.05em;
-  color: ${colors.component};
+  color: ${colors.primaryComponent};
   margin-bottom: 3rem;
   svg {
     width: 1.5rem;

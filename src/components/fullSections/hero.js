@@ -15,7 +15,6 @@ const StyledOverline = styled.p`
   font-weight: normal;
 `;
 const StyledTitle = styled.h1`
-  color: ${colors.component7};
   font-size: 8rem;
   line-height: 1.5;
   margin: 0;
@@ -23,7 +22,7 @@ const StyledTitle = styled.h1`
 const StyledSubtitle = styled.h2`
   font-size: 4rem;
   line-height: 1.1;
-  color: ${colors.component6};
+  color: ${colors.primaryComponent};
 `;
 const StyledDescription = styled.div`
   margin: 3rem 0 0 2rem;

@@ -23,7 +23,7 @@ const Global = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: ${colors.primaryBackground};
-    color: ${colors.primary};
+    color: ${colors.primaryForeground};
     line-height: 1.3;
     font-family: ${fonts.primary};
     font-size: ${fontSizes.md};
@@ -43,7 +43,7 @@ const Global = createGlobalStyle`
   }
 
   ::selection {
-    background-color: ${colors.component};
+    background-color: ${colors.primaryComponent};
   }
 
   #root {
@@ -60,7 +60,7 @@ const Global = createGlobalStyle`
   h5,
   h6 {
     margin: 0;
-    color: ${colors.component};
+    color: ${colors.primaryComponent};
     line-height: 1.1;
   }
 
@@ -118,7 +118,7 @@ const Global = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.component};
+      color: ${colors.primaryComponent};
     }
   }
 
@@ -129,7 +129,7 @@ const Global = createGlobalStyle`
 
     &:focus,
     &:active {
-      outline-color: ${colors.component};
+      outline-color: ${colors.primaryComponent};
     }
   }
 

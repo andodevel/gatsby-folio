@@ -19,7 +19,7 @@ const StyledContent = styled.div`
 const StyledProjectName = styled.h5`
   font-size: 2 0.8rem;
   margin: 0 0 2rem;
-  color: ${colors.component};
+  color: ${colors.primaryComponent};
 `;
 const StyledDescription = styled.div`
   ${Mixins.boxShadow};
@@ -47,7 +47,7 @@ const StyledTechList = styled.ul`
   li {
     font-family: ${fonts.secondary};
     font-size: ${fontSizes.xl};
-    color: ${colors.component};
+    color: ${colors.primaryComponent};
     font-style: italic;
     margin-right: ${Theme.margin};
     margin-bottom: 0.7rem;
@@ -66,7 +66,7 @@ const StyledLinkWrapper = styled.div`
   position: relative;
   margin-top: 1rem;
   margin-left: -1rem;
-  color: ${colors.component};
+  color: ${colors.primaryComponent};
   a {
     padding: 1rem;
     svg {

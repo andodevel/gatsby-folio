@@ -11,7 +11,7 @@ const StyledContainer = styled(Section)`
 const StyledHeading = styled.h2`
   font-size: 4rem;
   line-height: 1.1;
-  color: ${colors.component6};
+  color: ${colors.primaryComponent};
 `;
 
 const StyledDescription = styled.div`

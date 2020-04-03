@@ -16,7 +16,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   align-items: baseline;
   z-index: 5;
-  color: ${colors.component};
+  color: ${colors.primaryComponent};
   font-family: ${fonts.secondary};
 
   &:before {
@@ -24,7 +24,7 @@ const StyledContainer = styled.div`
     display: inline;
     margin: 0 0 0.8rem 0.8rem;
     transform: rotate(-90deg);
-    color: ${colors.component};
+    color: ${colors.primaryComponent};
     font-weight: 400;
   }
 
@@ -33,7 +33,7 @@ const StyledContainer = styled.div`
     display: inline;
     margin: 0.8rem 0 0 0.8rem;
     transform: rotate(90deg);
-    color: ${colors.component2};
+    color: ${colors.secondaryComponent};
     font-weight: 400;
   }
 `;

@@ -48,7 +48,7 @@ const Mixins = {
         content: '▹';
         position: absolute;
         left: 0;
-        color: ${colors.component};
+        color: ${colors.primaryComponent};
       }
     }
   `,
@@ -65,7 +65,7 @@ const Mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.component};
+      color: ${colors.primaryComponentActive};
       outline: 0;
     }
   `,
