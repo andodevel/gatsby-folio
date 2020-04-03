@@ -21,6 +21,8 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ seoTitle, children }) => {
+  const isHome = location.pathname === '/';
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -38,11 +40,19 @@ const Layout = ({ seoTitle, children }) => {
       <SEO title={title} />
       <Global />
       <StyledContent>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <LeftBreadcumb />
+        {isHome && (
+          <>
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <LeftBreadcumb />
+          </>
+        )}
         <div id="content">
           {children}
-          <Footer />
+          {isHome && (
+            <>
+              <Footer />
+            </>
+          )}
         </div>
       </StyledContent>
     </div>

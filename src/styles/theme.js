@@ -3,6 +3,13 @@ import Fonts from './fonts';
 
 const Theme = {
   colors: {
+    // Button
+    btn: `${Colors.orange1}`,
+    btnActive: `${Colors.orange2}`,
+
+    // 404
+    errPage: `${Colors.yellow1}`,
+
     primary: `${Colors.fg0}`,
     background: `${Colors.bg}`,
     text: `${Colors.fg}`,
@@ -18,11 +25,6 @@ const Theme = {
     headerBackground: `${Colors.bg1}`,
     footerBackground: `${Colors.bg1}`,
     sectionHeading: `${Colors.aqua1}`,
-    button: `${Colors.orange1}`,
-    buttonTxt: `${Colors.orange1}`,
-    buttonActive: `${Colors.orange2}`,
-    buttonActiveTxt: `${Colors.bg0}`,
-    buttonActiveBg: `${Colors.orange2}`,
   },
 
   fonts: {
@@ -46,7 +48,7 @@ const Theme = {
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
-  borderRadius: '0.5px',
+  borderRadius: '3px',
   margin: '2.0rem',
 
   tabHeight: '4.2', // rem

@@ -21,6 +21,16 @@ const Mixins = {
     align-items: center;
   `,
 
+  centerScreen: css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100wh;
+  `,
+
   outline: css`
     outline: 0.1rem solid red;
   `,
@@ -93,8 +103,8 @@ const Mixins = {
   `,
 
   bigButton: css`
-    border: 1px solid ${colors.button};
-    color: ${colors.buttonTxt};
+    border: 1px solid ${colors.btn};
+    color: ${colors.btn};
     background-color: transparent;
     border-radius: ${Theme.borderRadius};
     padding: 1.25rem 1.75rem;
@@ -107,9 +117,9 @@ const Mixins = {
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid ${colors.buttonActive};
-      color: ${colors.buttonActiveTxt};
-      background-color: ${colors.buttonActiveBg};
+      border: 1px solid ${colors.background};
+      color: ${colors.background};
+      background-color: ${colors.btnActive};
     }
     &:after {
       display: none !important;
