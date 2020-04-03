@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Jobs } from '@components';
+import { Layout, Hero, About, Jobs, Projects } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -19,6 +19,7 @@ const IndexPage = ({ location, data }) => (
       <StyledSectionGroupContainer>
         <About data={data.about.edges} />
         <Jobs data={data.jobs.edges} />
+        <Projects data={data.projects.edges} />
       </StyledSectionGroupContainer>
     </StyledMainContainer>
   </Layout>
@@ -75,6 +76,29 @@ export const pageQuery = graphql`
             company
             range
             url
+          }
+          html
+        }
+      }
+    }
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            tech
+            github
+            external
           }
           html
         }

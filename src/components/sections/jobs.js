@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Theme, Mixins, Section, Heading } from '@styles';
@@ -91,11 +91,9 @@ const StyledJobDetails = styled.h5`
 
 const Jobs = ({ data }) => {
   const [activeTabId, setActiveTabId] = useState(0);
-  const tabs = useRef([]);
-  const revealContainer = useRef(null);
 
   return (
-    <StyledContainer id="jobs" ref={revealContainer}>
+    <StyledContainer id="jobs">
       <Heading>Working history</Heading>
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs">
@@ -107,7 +105,6 @@ const Jobs = ({ data }) => {
                   <StyledTabButton
                     isActive={activeTabId === i}
                     onClick={() => setActiveTabId(i)}
-                    ref={el => (tabs.current[i] = el)}
                     id={`tab-${i}`}
                     role="tab"
                     aria-selected={activeTabId === i ? true : false}

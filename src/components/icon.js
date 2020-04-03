@@ -1,17 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  IconExternal,
-  IconFacebook,
-  IconFolder,
-  IconFork,
-  IconGitHub,
-  IconLoader,
-  IconStar,
-} from '@icons';
+import { IconFacebook, IconFolder, IconFork, IconGitHub, IconLoader, IconStar } from '@icons';
 
 export const IconNames = {
-  EXTERNAL: 'External',
   FACEBOOK: 'Facebook',
   FOLDER: 'Folder',
   FORK: 'Fork',
@@ -22,8 +13,6 @@ export const IconNames = {
 
 const Icon = ({ name }) => {
   switch (name) {
-    case IconNames.EXTERNAL:
-      return <IconExternal />;
     case IconNames.FACEBOOK:
       return <IconFacebook />;
     case IconNames.FOLDER:
@@ -37,7 +26,7 @@ const Icon = ({ name }) => {
     case IconNames.STAR:
       return <IconStar />;
     default:
-      return <IconExternal />;
+      return null;
   }
 };
 
