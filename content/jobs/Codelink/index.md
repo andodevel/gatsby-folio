@@ -4,7 +4,7 @@ title: 'Full-stack Engineer'
 company: 'Codelink'
 range: 'Jun 2019 - Present'
 url: 'https://codelink.io'
-tech:
+techs:
   - Rails
   - GoLang
   - Java

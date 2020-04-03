@@ -4,7 +4,7 @@ title: 'url2pdf'
 cover: './cover.png'
 github: 'https://github.com/andodevel/url2pdf'
 external: 'https://url2pdf.dev'
-tech:
+techs:
   - Koa
   - GCP
   - Puppepteer

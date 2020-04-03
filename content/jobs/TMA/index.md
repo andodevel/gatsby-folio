@@ -4,7 +4,7 @@ title: 'Software Engineer'
 company: 'TMA'
 range: 'Nov 2012 - Jun 2016'
 url: 'https://www.tmasolutions.com/'
-tech:
+techs:
   - JEE
   - EclipseRCP
   - Spring

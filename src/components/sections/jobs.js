@@ -43,12 +43,14 @@ const StyledTabContent = styled.div`
   padding-top: 1.2rem;
   padding-left: 3rem;
   outline: 0;
-
-  ul {
-    ${Mixins.ul};
-  }
   a {
     ${Mixins.link};
+  }
+`;
+
+const StyledMainList = styled.div`
+  ul {
+    ${Mixins.ul};
   }
 `;
 
@@ -75,6 +77,29 @@ const StyledJobDetails = styled.div`
   margin-bottom: 3rem;
   svg {
     width: 1.5rem;
+  }
+`;
+
+const StyledTechList = styled.ul`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    font-family: ${fonts.secondary};
+    color: ${colors.primaryComponent};
+    font-style: italic;
+    margin-right: 1rem;
+    white-space: nowrap;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:before {
+      content: '#';
+    }
   }
 `;
 
@@ -111,7 +136,7 @@ const Jobs = ({ data }) => {
         {data &&
           data.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { title, url, company, range } = frontmatter;
+            const { title, url, company, range, techs } = frontmatter;
             return (
               <StyledTabContent
                 key={i}
@@ -131,8 +156,17 @@ const Jobs = ({ data }) => {
                       &nbsp;@{company}
                     </a>
                   </StyledCompany>
+                  {techs && (
+                    <StyledTechList>
+                      {techs.map((tech, i) => (
+                        <li key={i}>{tech}</li>
+                      ))}
+                    </StyledTechList>
+                  )}
                 </StyledJobDetails>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                <StyledMainList>
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
+                </StyledMainList>
               </StyledTabContent>
             );
           })}

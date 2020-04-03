@@ -4,7 +4,7 @@ title: 'Full-stack Engineer'
 company: 'Bagang'
 range: 'Jan 2019 - Jun 2019'
 url: 'https://bagang.com.vn'
-tech:
+techs:
   - Java
   - SpringBoot
   - ReactJS

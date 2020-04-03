@@ -169,16 +169,16 @@ const Projects = ({ data }) => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, techs, github, cover } = frontmatter;
 
             return (
               <StyledProject key={i}>
                 <StyledContent>
                   <StyledProjectName>{title}</StyledProjectName>
                   <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
-                  {tech && (
+                  {techs && (
                     <StyledTechList>
-                      {tech.map((tech, i) => (
+                      {techs.map((tech, i) => (
                         <li key={i}>{tech}</li>
                       ))}
                     </StyledTechList>

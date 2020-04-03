@@ -77,6 +77,7 @@ export const pageQuery = graphql`
             company
             range
             url
+            techs
           }
           html
         }
@@ -97,7 +98,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            tech
+            techs
             github
             external
           }

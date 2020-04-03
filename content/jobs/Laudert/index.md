@@ -4,7 +4,7 @@ title: 'Print Solution Engineer'
 company: 'Laudert'
 range: 'Jun 2016 - Dec 2018'
 url: 'https://www.laudert.com/'
-tech:
+techs:
   - JEE
   - MySQL
   - PIM
