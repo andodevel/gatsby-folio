@@ -32,8 +32,7 @@ const StyledNav = styled.nav`
   width: 100%;
   color: ${colors.component};
   font-family: ${fonts.secondary};
-  counter-reset: item 0;
-  z-index: 12;
+  z-index: 10;
 `;
 const StyledLogo = styled.div`
   ${Mixins.flexCenter};

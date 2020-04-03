@@ -5,16 +5,21 @@ import { Layout, Hero, About, Jobs } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
-const StyledMainContainer = styled(Main)`
-  counter-reset: section;
+const StyledMainContainer = styled(Main)``;
+
+const StyledSectionGroupContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const IndexPage = ({ location, data }) => (
   <Layout seoTitle="Home" location={location}>
     <StyledMainContainer className="fillHeight">
       <Hero data={data.hero.edges} />
-      <About data={data.about.edges} />
-      <Jobs data={data.jobs.edges} />
+      <StyledSectionGroupContainer>
+        <About data={data.about.edges} />
+        <Jobs data={data.jobs.edges} />
+      </StyledSectionGroupContainer>
     </StyledMainContainer>
   </Layout>
 );
