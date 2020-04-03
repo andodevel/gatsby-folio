@@ -15,10 +15,12 @@ const StyledEmailLink = styled.a`
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   margin: 2rem auto 0 auto;
+  color: ${colors.primaryComponent};
 
   &:hover,
   &:focus {
     transform: rotate(-180deg) translateY(0.3rem);
+    color: ${colors.primaryComponentActive};
   }
 `;
 
@@ -27,7 +29,6 @@ const StyledResumeLink = styled.a`
   letter-spacing: 0.1em;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  color: ${colors.secondaryComponent};
 
   &:hover,
   &:focus {

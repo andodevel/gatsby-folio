@@ -36,6 +36,7 @@ const StyledTabButton = styled.button`
   font-family: ${fonts.secondary};
   font-size: ${fontSizes.xl};
   color: ${props => (props.isActive ? colors.primaryComponentActive : colors.primaryComponent)};
+  font-weight: ${props => (props.isActive ? 550 : 500)};
 `;
 const StyledHighlight = styled.span`
   display: block;

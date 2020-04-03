@@ -60,7 +60,6 @@ const Global = createGlobalStyle`
   h5,
   h6 {
     margin: 0;
-    color: ${colors.primaryComponent};
     line-height: 1.1;
   }
 

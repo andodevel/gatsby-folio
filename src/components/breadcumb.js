@@ -18,23 +18,24 @@ const StyledContainer = styled.div`
   z-index: 5;
   color: ${colors.primaryComponent};
   font-family: ${fonts.secondary};
+  font-weight: 550;
 
   &:before {
     content: '}';
     display: inline;
-    margin: 0 0 0.8rem 0.8rem;
+    margin: 0 0 0.8rem 0.6rem;
     transform: rotate(-90deg);
     color: ${colors.primaryComponent};
-    font-weight: 400;
+    font-weight: 550;
   }
 
   &:after {
     content: '}';
     display: inline;
-    margin: 0.8rem 0 0 0.8rem;
+    margin: 0.8rem 0 0 0.9rem;
     transform: rotate(90deg);
     color: ${colors.secondaryComponent};
-    font-weight: 400;
+    font-weight: 550;
   }
 `;
 
