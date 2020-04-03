@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { Theme, Mixins, Section, Heading } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+const { colors, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
   position: relative;
@@ -32,14 +32,12 @@ const Skill = styled.li`
   margin-bottom: 1rem;
   padding-left: 2rem;
   font-family: ${fonts.secondary};
-  font-size: ${fontSizes.smish};
   color: ${colors.slate};
   &:before {
     content: '▹';
     position: absolute;
     left: 0;
     color: ${colors.green};
-    font-size: ${fontSizes.sm};
     line-height: 1.2rem;
   }
 `;
@@ -57,7 +55,7 @@ const StyledPic = styled.div`
 const StyledAvatar = styled(Img)`
   position: relative;
   border-radius: ${Theme.borderRadius};
-  border: 2px solid ${colors.sectionHeading};
+  border: 1px solid ${colors.component};
   transition: ${Theme.transition};
 `;
 const StyledAvatarLink = styled.a`

@@ -27,7 +27,6 @@ const StyledDescription = styled.div`
   z-index: 2;
   padding: 2.5rem;
   background-color: ${colors.secondaryBackground};
-  font-size: ${fontSizes.lg};
   border-radius: ${Theme.borderRadius};
   p {
     margin: 0;
@@ -153,7 +152,7 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer id="projects">
-      <Heading>My personal projects</Heading>
+      <Heading>My projects</Heading>
 
       <div>
         {featuredProjects &&

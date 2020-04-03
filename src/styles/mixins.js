@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import Theme from './theme';
-const { colors, fontSizes, fonts } = Theme;
+const { colors, fonts } = Theme;
 
 const Mixins = {
   flexStart: css`
@@ -40,7 +40,6 @@ const Mixins = {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: ${fontSizes.lg};
     li {
       position: relative;
       padding-left: 3rem;
@@ -121,6 +120,7 @@ const Mixins = {
       border: 1px solid ${colors.primaryBackground};
       color: ${colors.primaryBackground};
       background-color: ${colors.buttonActive};
+      box-shadow: 0 0.5rem 1rem -0.5rem ${colors.buttonActive};
     }
     &:after {
       display: none !important;
@@ -132,12 +132,12 @@ const Mixins = {
   `,
 
   boxShadow: css`
-    box-shadow: 0 0.5rem 2rem -1rem ${colors.shadow};
+    box-shadow: 0 0.2rem 0.4rem -0.2rem ${colors.primaryShadow};
     transition: ${Theme.transition};
 
     &:hover,
     &:focus {
-      box-shadow: 0 0.8rem 2rem -1rem ${colors.shadow};
+      box-shadow: 0 0.5rem 1rem -0.5rem ${colors.primaryShadow};
     }
   `,
 };

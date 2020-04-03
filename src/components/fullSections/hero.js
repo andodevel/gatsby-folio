@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme, Mixins, Section } from '@styles';
-const { colors, fontSizes, fonts, width } = Theme;
+const { colors, fonts, width } = Theme;
 
 const StyledContainer = styled(Section)`
   ${Mixins.fullScreen};
@@ -11,7 +11,6 @@ const StyledContainer = styled(Section)`
 
 const StyledOverline = styled.p`
   margin: 0 0 1rem 0.3rem;
-  font-size: ${fontSizes.xl};
   font-family: ${fonts.secondary};
   font-weight: normal;
 `;

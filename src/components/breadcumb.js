@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme } from '@styles';
-const { colors, fontSizes, fonts } = Theme;
+const { colors, fonts } = Theme;
 
 const StyledContainer = styled.div`
   width: 4rem;
@@ -18,7 +18,6 @@ const StyledContainer = styled.div`
   z-index: 5;
   color: ${colors.component};
   font-family: ${fonts.secondary};
-  font-size: ${fontSizes.xl};
 
   &:before {
     content: '}';

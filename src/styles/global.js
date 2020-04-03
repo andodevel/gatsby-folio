@@ -59,24 +59,35 @@ const Global = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-weight: 600;
+    margin: 0;
     color: ${colors.component};
-    margin: 0 0 1rem 0;
+    line-height: 1.1;
   }
 
   h1 {
-    &.big-title {
-      font-size: 8rem;
-      line-height: 1.1;
-      margin: 0;
-    }
-
-    &.medium-title {
-      font-size: 6rem;
-      line-height: 1.1;
-      margin: 0;
-    }
+    font-size: ${fontSizes.h1};
   }
+
+  h2 {
+    font-size: ${fontSizes.h2};
+  }
+
+  h3 {
+    font-size: ${fontSizes.h3};
+  }
+
+  h4 {
+    font-size: ${fontSizes.h4};
+  }
+
+  h5 {
+    font-size: ${fontSizes.h5};
+  }
+
+  h6 {
+    font-size: ${fontSizes.h6};
+  }
+
 
   img {
     width: 100%;

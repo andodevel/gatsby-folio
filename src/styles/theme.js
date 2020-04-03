@@ -18,6 +18,13 @@ const Theme = {
     primaryBackground: `${Colors.bg}`,
     secondaryBackground: `${Colors.bg1}`,
 
+    // Section
+    sectionHeading: `${Colors.blue1}`,
+
+    // shadow
+    primaryShadow: `${Colors.orange2}`,
+    secondaryShadow: `${Colors.bg1}`,
+
     primary: `${Colors.fg0}`,
     text: `${Colors.fg}`,
     component: `${Colors.orange1}`,
@@ -27,8 +34,6 @@ const Theme = {
     component5: `${Colors.red1}`,
     component6: `${Colors.orange1}`,
     component7: `${Colors.fg0}`,
-    shadow: `${Colors.bg4}`,
-    sectionHeading: `${Colors.aqua1}`,
   },
 
   width: {
@@ -49,9 +54,12 @@ const Theme = {
     lg: '1.8rem',
     xl: '2.0rem',
     xxl: '2.2rem',
-    h3: '3.2rem',
-    h2: '4.2rem',
-    h1: '5.2rem',
+    h6: '2.4rem',
+    h5: '2.8rem',
+    h4: '3.2rem',
+    h3: '4.2rem',
+    h2: '6rem',
+    h1: '8rem',
   },
 
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',

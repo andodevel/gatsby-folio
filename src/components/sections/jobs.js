@@ -77,9 +77,9 @@ const StyledJobTitle = styled.h4`
 const StyledCompany = styled.span`
   color: ${colors.component};
 `;
-const StyledJobDetails = styled.h5`
+const StyledJobDetails = styled.div`
   font-family: ${fonts.secondary};
-  font-size: ${fontSizes.xl};
+  font-size: ${fontSizes.sm};
   font-weight: normal;
   letter-spacing: 0.05em;
   color: ${colors.component};

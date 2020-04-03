@@ -10,7 +10,7 @@ const Heading = styled.h3`
   margin: 1rem 0rem 4rem;
   width: 100%;
   white-space: nowrap;
-  font-size: ${fontSizes.h3};
+  font-size: ${fontSizes.h4};
 
   &:after {
     content: '';
