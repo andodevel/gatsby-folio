@@ -8,7 +8,7 @@ techs:
   - Java
   - SpringBoot
   - ReactJS
-  - Dubbo
+  - Microservices
   - Docker
   - K8s
 ---
