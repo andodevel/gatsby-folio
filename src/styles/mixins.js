@@ -30,6 +30,8 @@ const Mixins = {
     width: 100%;
     min-height: 100vh;
     height: 100vh;
+    text-align: justify;
+    text-align-last: center;
   `,
 
   outline: css`
@@ -104,7 +106,7 @@ const Mixins = {
       font-weight: 600 !important;
       outline: 0;
       &:after {
-        width: 50%;
+        width: 80%;
       }
       & > * {
         color: ${colors.linkActive} !important;
@@ -118,11 +120,11 @@ const Mixins = {
       width: 0;
       height: 0.2rem;
       position: relative;
-      left: 2rem;
-      bottom: -0.2rem;
+      left: 1rem;
+      bottom: -0.1rem;
       background-color: ${colors.linkActive};
       transition: ${Theme.transition};
-      opacity: 0.8;
+      opacity: 0.4;
     }
   `,
 

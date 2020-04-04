@@ -19,7 +19,7 @@ const StyledEmailLink = styled.a`
 
   &:hover,
   &:focus {
-    transform: rotate(-180deg) translateY(0.3rem);
+    transform: rotate(-180deg) translateX(0.2rem);
     color: ${colors.primaryComponentActive};
     font-weight: 600;
   }
@@ -33,7 +33,7 @@ const StyledResumeLink = styled.a`
 
   &:hover,
   &:focus {
-    transform: rotate(-180deg) translateY(0.3rem);
+    transform: rotate(-180deg) translateX(0.2rem);
   }
 `;
 
