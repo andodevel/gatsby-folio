@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { Theme } from '@styles';
+import { Theme, Media } from '@styles';
 const { colors, fonts } = Theme;
 
 const StyledContainer = styled.div`
@@ -11,6 +11,9 @@ const StyledContainer = styled.div`
   position: fixed;
   left: ${props => (props.orientation === 'left' ? '5rem' : 'auto')};
   right: ${props => (props.orientation === 'left' ? 'auto' : '5rem')};
+  ${Media.tablet`left: ${props => (props.orientation === 'left' ? '2rem' : 'auto')};`}
+  ${Media.tablet`right: ${props =>
+    props.orientation === 'left' ? '2rem' : 'auto'};`}
   display: flex;
   flex-direction: column;
   justify-content: center;

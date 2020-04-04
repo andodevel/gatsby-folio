@@ -11,8 +11,8 @@ const Main = styled.main`
   padding-bottom: 20rem;
 
   &.fillHeight {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 `;
 

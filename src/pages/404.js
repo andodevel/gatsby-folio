@@ -7,7 +7,7 @@ import { Theme, Mixins, Main } from '@styles';
 const { colors } = Theme;
 
 const StyledMainContainer = styled(Main)`
-  ${Mixins.fullScreen};
+  ${Mixins.centerScreen};
   color: ${colors.errPage};
 `;
 

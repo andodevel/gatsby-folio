@@ -1,10 +1,9 @@
-Styling: Theme fully supported
-Lowercase style filenames  
 Build airline header and footer  
-Fonts not working
 Use react hook  
 Create configuration
 Support responsive
 Remove not neccessary transition  
 Loading effects
 Replace proptype by typescript
+Wait till fully loaded  
+Support light theme

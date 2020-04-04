@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import Theme from './theme';
+import Media from './media';
 const { colors, fontSizes, fonts } = Theme;
 
 const Mixins = {
@@ -21,7 +22,9 @@ const Mixins = {
     align-items: center;
   `,
 
-  fullScreen: css`
+  centerScreen: css`
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +35,8 @@ const Mixins = {
     height: 100vh;
     text-align: justify;
     text-align-last: center;
+    ${Media.tablet`text-align: inherit;`}
+    ${Media.tablet`text-align-last: inherit;`}
   `,
 
   outline: css`
@@ -154,6 +159,8 @@ const Mixins = {
 
   sidePadding: css`
     padding: 0 15rem;
+    ${Media.tablet`padding: 5rem;`}
+    ${Media.phablet`padding: 3rem;`}
   `,
 
   boxShadow: css`

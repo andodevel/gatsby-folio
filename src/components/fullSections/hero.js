@@ -6,7 +6,7 @@ import { Theme, Mixins, Section } from '@styles';
 const { colors, fonts, width } = Theme;
 
 const StyledContainer = styled(Section)`
-  ${Mixins.fullScreen};
+  ${Mixins.centerScreen};
 `;
 
 const StyledOverline = styled.p`

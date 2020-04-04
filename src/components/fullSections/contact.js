@@ -5,7 +5,7 @@ import { Theme, Mixins, Section } from '@styles';
 const { colors, width } = Theme;
 
 const StyledContainer = styled(Section)`
-  ${Mixins.fullScreen};
+  ${Mixins.centerScreen};
 `;
 
 const StyledHeading = styled.h3`
