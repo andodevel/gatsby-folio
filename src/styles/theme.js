@@ -46,7 +46,7 @@ const Theme = {
 
   fonts: {
     primary: `${Fonts.Hack}`,
-    secondary: `${Fonts.Monofur}`,
+    secondary: `${Fonts.JetBrainsMono}`,
   },
 
   fontSizes: {

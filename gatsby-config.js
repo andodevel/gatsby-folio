@@ -32,12 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: [
-            'Hack Nerd Font',
-            'Hack Nerd Font Mono',
-            'Monofur Nerd Font',
-            'Monofur Nerd Font Mono',
-          ],
+          families: ['Hack Font', 'JetBrains Font Mono'],
           urls: ['fonts/fonts.css'],
         },
       },

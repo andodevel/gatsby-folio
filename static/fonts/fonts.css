@@ -1,85 +1,60 @@
+/* Hack */
+/* JetBrains */
 @font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('Hack/HackRegularNerdFontComplete.ttf') format('truetype');
+  font-family: 'Hack Font';
+  src: url('Hack/hack-regular-subset.woff2') format('woff2'),
+    url('Hack/hack-regular-subset.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Hack Nerd Font Mono';
-  src: url('Hack/HackRegularNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('Hack/HackBoldNerdFontComplete.ttf') format('truetype');
+  font-family: 'Hack Font';
+  src: url('Hack/hack-bold-subset.woff2') format('woff2'),
+    url('Hack/hack-bold-subset.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Hack Nerd Font Mono';
-  src: url('Hack/HackBoldNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('Hack/HackItalicNerdFontComplete.ttf') format('truetype');
+  font-family: 'Hack Font';
+  src: url('Hack/hack-italic-subset.woff2') format('woff2'),
+    url('Hack/hack-italic-subset.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Hack Nerd Font Mono';
-  src: url('Hack/HackItalicNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('Hack/HackBoldItalicNerdFontComplete.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Hack Nerd Font Mono';
-  src: url('Hack/HackBoldItalicNerdFontCompleteMono.ttf') format('truetype');
+  font-family: 'Hack Font';
+  src: url('Hack/hack-bolditalic-subset.woff2') format('woff2'),
+    url('Hack/hack-bolditalic-subset.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 
+/* JetBrains */
 @font-face {
-  font-family: 'Monofur Nerd Font';
-  src: url('Monofur/MonofurNerdFontComplete.ttf') format('truetype');
+  font-family: 'JetBrains Font Mono';
+  src: url('JetBrains/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('JetBrains/JetBrainsMono-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Monofur Nerd Font Mono';
-  src: url('Monofur/MonofurNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Monofur Nerd Font';
-  src: url('Monofur/MonofurBoldNerdFontComplete.ttf') format('truetype');
+  font-family: 'JetBrains Font Mono';
+  src: url('JetBrains/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('JetBrains/JetBrainsMono-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Monofur Nerd Font Mono';
-  src: url('Monofur/MonofurBoldNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Monofur Nerd Font';
-  src: url('Monofur/MonofurItalicNerdFontComplete.ttf') format('truetype');
+  font-family: 'JetBrains Font Mono';
+  src: url('JetBrains/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('JetBrains/JetBrainsMono-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Monofur Nerd Font Mono';
-  src: url('Monofur/MonofurItalicNerdFontCompleteMono.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'JetBrains Font Mono';
+  src: url('JetBrains/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('JetBrains/JetBrainsMono-Bold-Italic.woff') format('woff');
+  font-weight: 600;
   font-style: italic;
 }

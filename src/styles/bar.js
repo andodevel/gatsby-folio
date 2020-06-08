@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import Theme from './theme';
 import Mixins from './mixins';
 
-const { colors, fonts } = Theme;
+const { colors, fonts, fontSizes } = Theme;
 
 const Bar = css`
   ${Mixins.flexBetween};
@@ -16,6 +16,7 @@ const Bar = css`
   min-height: 4rem;
   background-color: ${colors.secondaryBackground};
   font-family: ${fonts.secondary};
+  font-size: ${fontSizes.sm};
   line-height: 1;
 `;
 
