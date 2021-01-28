@@ -13,5 +13,5 @@ techs:
   - K8s
 ---
 
-- The mobile app gives fast and easy personal loan.
+- A P2P lending application.
 - I worked as a full-stack developer of backend service, includes cloud microservices and internal web system to support operation team proceed user's application for loan.
