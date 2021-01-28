@@ -33,8 +33,8 @@ const Mixins = {
     width: 100%;
     min-height: 100vh;
     height: 100vh;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
+    vertical-align: center;
     ${Media.tablet`text-align: inherit;`}
     ${Media.tablet`text-align-last: inherit;`}
   `,
@@ -156,9 +156,9 @@ const Mixins = {
   `,
 
   sidePadding: css`
-    padding: 0 15rem;
-    ${Media.tablet`padding: 5rem;`}
-    ${Media.phablet`padding: 3rem;`}
+    padding: 0 10rem;
+    ${Media.tablet`padding: 7rem;`}
+    ${Media.phablet`padding: 5rem;`}
   `,
 
   boxShadow: css`

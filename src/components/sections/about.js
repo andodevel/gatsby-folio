@@ -57,7 +57,7 @@ const StyledAvatar = styled(Img)`
   border: 1px solid ${colors.primaryComponent};
   transition: ${Theme.transition};
 `;
-const StyledAvatarLink = styled.a`
+const StyledAvatarLink = styled.div`
   ${Mixins.boxShadow};
   width: 100%;
   position: relative;
@@ -80,7 +80,7 @@ const About = ({ data }) => {
           </SkillsContainer>
         </StyledContent>
         <StyledPic>
-          <StyledAvatarLink href="">
+          <StyledAvatarLink>
             <StyledAvatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
           </StyledAvatarLink>
         </StyledPic>

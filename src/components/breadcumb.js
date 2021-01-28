@@ -9,8 +9,8 @@ const StyledContainer = styled.div`
   width: 4rem;
   height: 100vh;
   position: fixed;
-  left: ${props => (props.orientation === 'left' ? '5rem' : 'auto')};
-  right: ${props => (props.orientation === 'left' ? 'auto' : '5rem')};
+  left: ${props => (props.orientation === 'left' ? '3rem' : 'auto')};
+  right: ${props => (props.orientation === 'left' ? 'auto' : '3rem')};
   ${Media.tablet`left: ${props => (props.orientation === 'left' ? '2rem' : 'auto')};`}
   ${Media.tablet`right: ${props =>
     props.orientation === 'left' ? '2rem' : 'auto'};`}

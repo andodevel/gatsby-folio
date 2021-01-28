@@ -11,7 +11,6 @@ const StyledLinkWrapper = styled.div`
   align-items: center;
   letter-spacing: 0.1rem;
   transform: rotate(-90deg);
-  font-weight: 600;
 `;
 const StyledEmailLink = styled.a`
   ${Mixins.link};
@@ -21,6 +20,7 @@ const StyledEmailLink = styled.a`
   &:hover,
   &:focus {
     color: ${colors.primaryComponentActive};
+    transform: translateY(0.1rem);
   }
   &:after {
     background-color: ${colors.primaryComponentActive};
@@ -29,6 +29,11 @@ const StyledEmailLink = styled.a`
 
 const StyledResumeLink = styled.a`
   ${Mixins.link};
+
+  &:hover,
+  &:focus {
+    transform: translateY(0.1rem);
+  }
 `;
 
 const email = `ando.devel@gmail.com`;

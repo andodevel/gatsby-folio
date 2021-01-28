@@ -165,7 +165,7 @@ _Not support yet_
 ## 👓 Inspiration
 
 This project gets heavily insprired by  
-[gatsby-simplefolio](https://gatsby-simplefolio.netlify.com/)  
+[typings.gg](https://typings.gg/)  
 [Brittany Chiang's portfolio](https://brittanychiang.com/)
 
 ## 🦄 Forking this repo

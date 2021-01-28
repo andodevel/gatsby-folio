@@ -38,10 +38,10 @@ const Theme = {
   },
 
   width: {
-    fullDescription: '70%',
-    maxFullDescription: '90rem',
+    fullDescription: '60%',
+    maxFullDescription: '80%',
     sectionWidth: '80%',
-    sectionMaxWidth: '100rem',
+    sectionMaxWidth: '90%',
   },
 
   fonts: {
@@ -72,7 +72,7 @@ const Theme = {
   tabHeight: '4.2', // rem
   tabWidth: '1.2', // rem
 
-  contentLineHeight: 1.5,
+  contentLineHeight: 1.6,
   headerLineHeight: 1.1,
 };
 
