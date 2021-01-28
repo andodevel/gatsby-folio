@@ -1,7 +1,7 @@
 ---
 date: '2020-02-01'
 title: 'clock_server'
-cover: './cover.png'
+cover: './cover.jpg'
 github: 'https://github.com/andodevel/clock_server'
 techs:
   - Golang

@@ -54,10 +54,6 @@ const socialMedia = [
     name: 'GitHub',
     url: 'https://github.com/andodevel',
   },
-  {
-    name: 'Facebook',
-    url: 'https://facebook.com/andodevel',
-  },
 ];
 
 const Footer = () => {

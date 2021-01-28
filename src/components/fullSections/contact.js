@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Theme, Mixins, Section } from '@styles';
 const { colors, width } = Theme;
 
@@ -9,11 +10,12 @@ const StyledContainer = styled(Section)`
 `;
 
 const StyledHeading = styled.h3`
-  line-height: 1.1;
+  line-height: ${Theme.headerLineHeight};
   color: ${colors.primaryComponent};
 `;
 
 const StyledDescription = styled.div`
+  line-height: ${Theme.contentLineHeight};
   margin: 3rem 0 0 2rem;
   width: ${width.fullDescription};
   max-width: ${width.maxFullDescription};
@@ -36,9 +38,11 @@ const Contact = ({ data }) => {
     <StyledContainer id="contact">
       <StyledHeading>{title}</StyledHeading>
       <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
-      <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-        {contactText}
-      </StyledEmailLink>
+      <TransitionGroup>
+        <CSSTransition classNames="fadeup" timeout={3000}>
+          <StyledEmailLink href={`mailto:${email}`}>{contactText}</StyledEmailLink>
+        </CSSTransition>
+      </TransitionGroup>
     </StyledContainer>
   );
 };

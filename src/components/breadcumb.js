@@ -17,13 +17,13 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   z-index: 5;
   color: ${colors.primaryComponent};
   font-family: ${fonts.secondary};
 
   &:before {
-    content: '}';
+    content: '>>>';
     display: inline;
     margin: 0 0 0.8rem 0.6rem;
     transform: rotate(-90deg);
@@ -31,7 +31,7 @@ const StyledContainer = styled.div`
   }
 
   &:after {
-    content: '}';
+    content: '>>>';
     display: inline;
     margin: 0.8rem 0 0 0.9rem;
     transform: rotate(90deg);

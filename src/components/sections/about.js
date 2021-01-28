@@ -38,7 +38,7 @@ const Skill = styled.li`
     top: 0.5rem;
     left: 0;
     color: ${colors.indicator};
-    line-height: 1.2rem;
+    line-height: ${Theme.headerLineHeight};
   }
 `;
 const StyledPic = styled.div`

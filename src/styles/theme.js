@@ -45,8 +45,8 @@ const Theme = {
   },
 
   fonts: {
-    primary: `${Fonts.Hack}`,
-    secondary: `${Fonts.JetBrainsMono}`,
+    primary: `${Fonts.SourceSansPro}`,
+    secondary: `${Fonts.RobotoCondensed}`,
   },
 
   fontSizes: {
@@ -71,6 +71,9 @@ const Theme = {
 
   tabHeight: '4.2', // rem
   tabWidth: '1.2', // rem
+
+  contentLineHeight: 1.5,
+  headerLineHeight: 1.1,
 };
 
 export default Theme;

@@ -28,9 +28,9 @@ const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: ${colors.primaryBackground};
     color: ${colors.primaryForeground};
-    line-height: 1.3;
+    line-height: ${Theme.contentLineHeight};
     font-family: ${fonts.primary};
-    font-size: ${fontSizes.md};
+    font-size: ${fontSizes.lg};
 
     &.hidden {
       overflow: hidden;
@@ -64,7 +64,7 @@ const Global = createGlobalStyle`
   h5,
   h6 {
     margin: 0;
-    line-height: 1.1;
+    line-height: ${Theme.headerLineHeight};
     font-weight: 500;
   }
 

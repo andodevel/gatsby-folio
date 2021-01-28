@@ -16,8 +16,8 @@ const Bar = css`
   min-height: 4rem;
   background-color: ${colors.secondaryBackground};
   font-family: ${fonts.secondary};
-  font-size: ${fontSizes.sm};
-  line-height: 1;
+  font-size: ${fontSizes.md};
+  line-height: ${Theme.headerLineHeight};
 `;
 
 export default Bar;

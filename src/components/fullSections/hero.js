@@ -15,11 +15,11 @@ const StyledOverline = styled.p`
   font-weight: normal;
 `;
 const StyledTitle = styled.h1`
-  line-height: 1.5;
+  line-height: ${Theme.contentLineHeight};
   margin: 0;
 `;
 const StyledSubtitle = styled.h4`
-  line-height: 1.1;
+  line-height: ${Theme.headerLineHeight};
   color: ${colors.primaryComponent};
 `;
 const StyledDescription = styled.div`
@@ -30,12 +30,6 @@ const StyledDescription = styled.div`
     ${Mixins.link};
   }
 `;
-const StyledEmailLink = styled.a`
-  ${Mixins.button};
-  margin: 5rem 0 0 0.5rem;
-`;
-
-const email = 'ando.devel@gmail.com';
 
 const Hero = ({ data }) => {
   const { frontmatter, html } = data[0].node;
@@ -62,9 +56,6 @@ const Hero = ({ data }) => {
             style={{ transitionDelay: '400ms' }}
             dangerouslySetInnerHTML={{ __html: html }}
           />
-        </CSSTransition>
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledEmailLink href={`mailto:${email}`}>{frontmatter.contactText}</StyledEmailLink>
         </CSSTransition>
       </TransitionGroup>
     </StyledContainer>

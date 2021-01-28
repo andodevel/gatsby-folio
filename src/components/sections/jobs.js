@@ -53,6 +53,7 @@ const StyledTabContent = styled.div`
 const StyledMainList = styled.div`
   ul {
     ${Mixins.ul};
+    overflow-y: auto;
   }
 `;
 

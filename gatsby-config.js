@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: ['Hack Font', 'JetBrains Font Mono'],
+          families: ['Source Sans Pro', 'Roboto Condensed'],
           urls: ['fonts/fonts.css'],
         },
       },

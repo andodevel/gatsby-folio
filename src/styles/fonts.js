@@ -1,8 +1,7 @@
 // All FontFaces have been registered in Global.js
 const Fonts = {
-  Hack:
-    'Hack Font, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial, sans-serif',
-  JetBrainsMono: 'JetBrains Font Mono, Roboto Mono, monospace',
+  SourceSansPro: 'Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif',
+  RobotoCondensed: 'Roboto Condensed, Helvetica Neue, Helvetica, Arial, sans-serif',
 };
 
 export default Fonts;

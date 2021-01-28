@@ -1,7 +1,7 @@
 ---
 date: '2020-03-01'
 title: 'url2pdf'
-cover: './cover.png'
+cover: './cover.jpg'
 github: 'https://github.com/andodevel/url2pdf'
 external: 'https://url2pdf.dev'
 techs:

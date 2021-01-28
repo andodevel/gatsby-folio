@@ -1,7 +1,7 @@
 ---
 date: '2020-04-01'
 title: 'gatsby-folio'
-cover: './cover.png'
+cover: './cover.jpg'
 github: 'https://github.com/andodevel/gatsby-folio'
 techs:
   - Gatsby

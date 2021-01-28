@@ -140,7 +140,7 @@ const Mixins = {
     border-radius: ${Theme.borderRadius};
     padding: 1.25rem 1.75rem;
     font-family: ${fonts.secondary};
-    line-height: 1;
+    line-height: ${Theme.contentLineHeight};
     text-decoration: none;
     cursor: pointer;
     transition: ${Theme.transition};

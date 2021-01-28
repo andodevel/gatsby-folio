@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IconFacebook, IconFork, IconGitHub, IconStar } from '@icons';
+import { IconFork, IconGitHub, IconStar } from '@icons';
 
 export const IconNames = {
-  FACEBOOK: 'Facebook',
   FORK: 'Fork',
   GITHUB: 'GitHub',
   STAR: 'Star',
@@ -11,8 +10,6 @@ export const IconNames = {
 
 const Icon = ({ name }) => {
   switch (name) {
-    case IconNames.FACEBOOK:
-      return <IconFacebook />;
     case IconNames.FORK:
       return <IconFork />;
     case IconNames.GITHUB:
