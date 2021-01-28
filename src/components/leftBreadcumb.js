@@ -6,35 +6,29 @@ const { colors } = Theme;
 
 const StyledLinkWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  transform: rotate(-90deg);
+  font-weight: 600;
 `;
 const StyledEmailLink = styled.a`
-  letter-spacing: 0.1em;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  margin: 2rem auto 0 auto;
+  ${Mixins.link};
   color: ${colors.primaryComponent};
+  margin-left: 1.5rem;
 
   &:hover,
   &:focus {
-    transform: rotate(-180deg) translateX(0.2rem);
     color: ${colors.primaryComponentActive};
-    font-weight: 600;
+  }
+  &:after {
+    background-color: ${colors.primaryComponentActive};
   }
 `;
 
 const StyledResumeLink = styled.a`
   ${Mixins.link};
-  letter-spacing: 0.1em;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-
-  &:hover,
-  &:focus {
-    transform: rotate(-180deg) translateX(0.2rem);
-  }
 `;
 
 const email = `ando.devel@gmail.com`;

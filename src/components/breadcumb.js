@@ -21,22 +21,6 @@ const StyledContainer = styled.div`
   z-index: 5;
   color: ${colors.primaryComponent};
   font-family: ${fonts.secondary};
-
-  &:before {
-    content: '>>>';
-    display: inline;
-    margin: 0 0 0.8rem 0.6rem;
-    transform: rotate(-90deg);
-    color: ${colors.primaryComponent};
-  }
-
-  &:after {
-    content: '>>>';
-    display: inline;
-    margin: 0.8rem 0 0 0.9rem;
-    transform: rotate(90deg);
-    color: ${colors.secondaryComponent};
-  }
 `;
 
 const Breadcumb = ({ children, orientation }) => (

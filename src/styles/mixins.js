@@ -108,14 +108,12 @@ const Mixins = {
     color: ${colors.link};
     &:hover {
       color: ${colors.linkActive};
-      font-weight: 600 !important;
       outline: 0;
       &:after {
         width: 80%;
       }
       & > * {
         color: ${colors.linkActive} !important;
-        font-weight: 600 !important;
         transition: ${Theme.transition};
       }
     }
