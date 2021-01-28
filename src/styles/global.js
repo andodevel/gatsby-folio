@@ -40,6 +40,7 @@ const Global = createGlobalStyle`
       #root > #content > * {
         filter: blur(0.5rem) brightness(0.7);
         transition: ${Theme.transition};
+        transition-delay: ${Theme.transitionDelay};
         pointer-events: none;
         user-select: none;
       }
@@ -118,6 +119,7 @@ const Global = createGlobalStyle`
     color: inherit;
     position: relative;
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     cursor: pointer;
 
     &:hover,

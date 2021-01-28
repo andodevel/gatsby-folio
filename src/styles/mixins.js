@@ -70,6 +70,7 @@ const Mixins = {
     color: ${colors.primaryComponent};
     position: relative;
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     padding: 0 2rem 0.2rem;
     text-align: left;
     white-space: nowrap;
@@ -93,8 +94,8 @@ const Mixins = {
     position: absolute;
     top: 1.1rem;
     left: 0;
-    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition-delay: 0.1s;
+    transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     z-index: 5;
   `,
 
@@ -104,6 +105,7 @@ const Mixins = {
     text-decoration-skip-ink: auto;
     position: relative;
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     cursor: pointer;
     color: ${colors.link};
     &:hover {
@@ -115,6 +117,7 @@ const Mixins = {
       & > * {
         color: ${colors.linkActive} !important;
         transition: ${Theme.transition};
+        transition-delay: ${Theme.transitionDelay};
       }
     }
     &:after {
@@ -127,6 +130,7 @@ const Mixins = {
       bottom: -0.1rem;
       background-color: ${colors.linkActive};
       transition: ${Theme.transition};
+      transition-delay: ${Theme.transitionDelay};
       opacity: 0.4;
     }
   `,
@@ -142,6 +146,7 @@ const Mixins = {
     text-decoration: none;
     cursor: pointer;
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     &:hover,
     &:focus,
     &:active {
@@ -164,6 +169,7 @@ const Mixins = {
   boxShadow: css`
     box-shadow: 0 0.2rem 0.4rem -0.2rem ${colors.primaryShadow};
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
 
     &:hover,
     &:focus {

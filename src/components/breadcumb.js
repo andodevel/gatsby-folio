@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme, Media } from '@styles';
 const { colors, fonts } = Theme;
@@ -24,13 +23,7 @@ const StyledContainer = styled.div`
 `;
 
 const Breadcumb = ({ children, orientation }) => (
-  <StyledContainer orientation={orientation}>
-    <TransitionGroup component={null}>
-      <CSSTransition classNames={'fade'} timeout={3000}>
-        {children}
-      </CSSTransition>
-    </TransitionGroup>
-  </StyledContainer>
+  <StyledContainer orientation={orientation}>{children}</StyledContainer>
 );
 
 Breadcumb.propTypes = {

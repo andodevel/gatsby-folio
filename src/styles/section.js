@@ -28,6 +28,7 @@ const Section = styled.section`
       position: relative;
       background-color: ${colors.sectionHeading};
       transition: ${Theme.transition};
+      transition-delay: ${Theme.transitionDelay};
     }
   }
 `;

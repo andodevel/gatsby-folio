@@ -56,6 +56,7 @@ const StyledAvatar = styled(Img)`
   border-radius: ${Theme.borderRadius};
   border: 1px solid ${colors.primaryComponent};
   transition: ${Theme.transition};
+  transition-delay: ${Theme.transitionDelay};
 `;
 const StyledAvatarLink = styled.div`
   ${Mixins.boxShadow};

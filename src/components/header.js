@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme, Mixins, Header as StyledHeader } from '@styles';
 const { fonts } = Theme;
@@ -63,42 +62,28 @@ const navLinks = [
   },
 ];
 
-const Header = ({ isHome }) => {
-  const timeout = 3000;
-  const fadeClass = 'fade';
-  const fadeDownClass = 'fadedown';
+const Header = ({ isHome }) => (
+  <StyledContainer>
+    <StyledNav>
+      <StyledLogo tabindex="-1">
+        <a href={isHome ? '/#' : '/'} aria-label="home">
+          Home
+        </a>
+      </StyledLogo>
 
-  return (
-    <StyledContainer>
-      <StyledNav>
-        <TransitionGroup component={null}>
-          <CSSTransition classNames={fadeClass} timeout={timeout}>
-            <StyledLogo tabindex="-1">
-              <a href={isHome ? '/#' : '/'} aria-label="home">
-                Home
-              </a>
-            </StyledLogo>
-          </CSSTransition>
-        </TransitionGroup>
-
-        <StyledLink>
-          <StyledList>
-            <TransitionGroup component={null}>
-              {navLinks &&
-                navLinks.map(({ url, name }, i) => (
-                  <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
-                    <StyledListItem key={i} style={{ transitionDelay: `${i * 100}ms` }}>
-                      <StyledListLink to={url}>{name}</StyledListLink>
-                    </StyledListItem>
-                  </CSSTransition>
-                ))}
-            </TransitionGroup>
-          </StyledList>
-        </StyledLink>
-      </StyledNav>
-    </StyledContainer>
-  );
-};
+      <StyledLink>
+        <StyledList>
+          {navLinks &&
+            navLinks.map(({ url, name }, i) => (
+              <StyledListItem key={i}>
+                <StyledListLink to={url}>{name}</StyledListLink>
+              </StyledListItem>
+            ))}
+        </StyledList>
+      </StyledLink>
+    </StyledNav>
+  </StyledContainer>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

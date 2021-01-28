@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { Theme, Mixins, Section } from '@styles';
 const { colors, fonts, width } = Theme;
@@ -36,28 +35,10 @@ const Hero = ({ data }) => {
 
   return (
     <StyledContainer>
-      <TransitionGroup component={null}>
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledOverline style={{ transitionDelay: '100ms' }}>{frontmatter.title}</StyledOverline>
-        </CSSTransition>
-
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledTitle style={{ transitionDelay: '200ms' }}>{frontmatter.name}</StyledTitle>
-        </CSSTransition>
-
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledSubtitle style={{ transitionDelay: '300ms' }}>
-            {frontmatter.subtitle}
-          </StyledSubtitle>
-        </CSSTransition>
-
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledDescription
-            style={{ transitionDelay: '400ms' }}
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </CSSTransition>
-      </TransitionGroup>
+      <StyledOverline>{frontmatter.title}</StyledOverline>
+      <StyledTitle>{frontmatter.name}</StyledTitle>
+      <StyledSubtitle>{frontmatter.subtitle}</StyledSubtitle>
+      <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
     </StyledContainer>
   );
 };

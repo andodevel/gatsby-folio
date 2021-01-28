@@ -102,6 +102,7 @@ const StyledImgContainer = styled.a`
   z-index: 1;
   border-radius: ${Theme.borderRadius};
   transition: ${Theme.transition};
+  transition-delay: ${Theme.transitionDelay};
   &:hover,
   &:focus {
     background: transparent;
@@ -122,6 +123,7 @@ const StyledImgContainer = styled.a`
     bottom: 0;
     z-index: 3;
     transition: ${Theme.transition};
+    transition-delay: ${Theme.transitionDelay};
     mix-blend-mode: screen;
   }
 `;

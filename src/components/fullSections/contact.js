@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Theme, Mixins, Section } from '@styles';
 const { colors, width } = Theme;
 
@@ -38,11 +37,7 @@ const Contact = ({ data }) => {
     <StyledContainer id="contact">
       <StyledHeading>{title}</StyledHeading>
       <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
-      <TransitionGroup>
-        <CSSTransition classNames="fadeup" timeout={3000}>
-          <StyledEmailLink href={`mailto:${email}`}>{contactText}</StyledEmailLink>
-        </CSSTransition>
-      </TransitionGroup>
+      <StyledEmailLink href={`mailto:${email}`}>{contactText}</StyledEmailLink>
     </StyledContainer>
   );
 };
