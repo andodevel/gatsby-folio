@@ -9,17 +9,28 @@ const StyledContainer = styled(Section)`
 `;
 
 const StyledTabs = styled.div`
+  position: relative;
   display: flex;
   align-items: flex-start;
+  width: 100%;
+  min-height: 30vh;
+  height: 40vh;
+  max-height: 60vh;
+`;
+
+const StyledTabListContainer = styled.div`
   position: relative;
+  min-width: 12rem;
+  width: 12rem;
+  max-width: 12rem;
+  height: 100%;
+  overflow: hidden auto;
 `;
 
 const StyledTabList = styled.ul`
-  display: block;
   position: relative;
-  width: max-content;
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 `;
 
@@ -36,14 +47,16 @@ const StyledHighlight = styled.span`
   );
 `;
 
-const StyledTabContent = styled.div`
-  overflow: hidden;
+const StyledTabContentsContainer = styled.div`
+  padding: 0.2rem 0 0 1rem;
   position: relative;
-  width: 100%;
-  min-height: 20rem;
-  height: 30rem;
-  padding-top: 1.2rem;
-  padding-left: 3rem;
+  flex: 1 1 80%;
+  height: 100%;
+  overflow: hidden auto;
+`;
+
+const StyledTabContent = styled.div`
+  position: relative;
   outline: 0;
   a {
     ${Mixins.link};
@@ -51,9 +64,9 @@ const StyledTabContent = styled.div`
 `;
 
 const StyledMainList = styled.div`
+  display: block;
   ul {
     ${Mixins.ul};
-    overflow-y: auto;
   }
 `;
 
@@ -114,65 +127,69 @@ const Jobs = ({ data }) => {
       <h4 className="heading">Working history</h4>
 
       <StyledTabs>
-        <StyledTabList role="tablist" aria-label="Job tabs">
+        <StyledTabListContainer>
+          <StyledTabList role="tablist" aria-label="Job tabs">
+            {data &&
+              data.map(({ node }, i) => {
+                const { company } = node.frontmatter;
+                return (
+                  <li key={i}>
+                    <StyledTabButton
+                      isActive={activeTabId === i}
+                      onClick={() => setActiveTabId(i)}
+                      id={`tab-${i}`}
+                      role="tab"
+                      aria-selected={activeTabId === i ? true : false}
+                      aria-controls={`panel-${i}`}
+                      tabIndex={activeTabId === i ? '0' : '-1'}>
+                      <span>{company}</span>
+                    </StyledTabButton>
+                  </li>
+                );
+              })}
+            <StyledHighlight activeTabId={activeTabId} />
+          </StyledTabList>
+        </StyledTabListContainer>
+
+        <StyledTabContentsContainer>
           {data &&
             data.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+              const { frontmatter, html } = node;
+              const { title, url, company, range, techs } = frontmatter;
               return (
-                <li key={i}>
-                  <StyledTabButton
-                    isActive={activeTabId === i}
-                    onClick={() => setActiveTabId(i)}
-                    id={`tab-${i}`}
-                    role="tab"
-                    aria-selected={activeTabId === i ? true : false}
-                    aria-controls={`panel-${i}`}
-                    tabIndex={activeTabId === i ? '0' : '-1'}>
-                    <span>{company}</span>
-                  </StyledTabButton>
-                </li>
+                <StyledTabContent
+                  key={i}
+                  isActive={activeTabId === i}
+                  id={`panel-${i}`}
+                  role="tabpanel"
+                  aria-labelledby={`tab-${i}`}
+                  tabIndex={activeTabId === i ? '0' : '-1'}
+                  style={{ display: activeTabId !== i ? 'none' : 'block' }}>
+                  <StyledJobTitle>
+                    <span>{title}</span>
+                  </StyledJobTitle>
+                  <StyledJobDetails>
+                    <span>{range}</span>
+                    <StyledCompany>
+                      <a href={url} target="_blank" rel="nofollow noopener noreferrer">
+                        &nbsp;@{company}
+                      </a>
+                    </StyledCompany>
+                    {techs && (
+                      <StyledTechList>
+                        {techs.map((tech, i) => (
+                          <li key={i}>{tech}</li>
+                        ))}
+                      </StyledTechList>
+                    )}
+                  </StyledJobDetails>
+                  <StyledMainList>
+                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                  </StyledMainList>
+                </StyledTabContent>
               );
             })}
-          <StyledHighlight activeTabId={activeTabId} />
-        </StyledTabList>
-
-        {data &&
-          data.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { title, url, company, range, techs } = frontmatter;
-            return (
-              <StyledTabContent
-                key={i}
-                isActive={activeTabId === i}
-                id={`panel-${i}`}
-                role="tabpanel"
-                aria-labelledby={`tab-${i}`}
-                tabIndex={activeTabId === i ? '0' : '-1'}
-                hidden={activeTabId !== i}>
-                <StyledJobTitle>
-                  <span>{title}</span>
-                </StyledJobTitle>
-                <StyledJobDetails>
-                  <span>{range}</span>
-                  <StyledCompany>
-                    <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-                      &nbsp;@{company}
-                    </a>
-                  </StyledCompany>
-                  {techs && (
-                    <StyledTechList>
-                      {techs.map((tech, i) => (
-                        <li key={i}>{tech}</li>
-                      ))}
-                    </StyledTechList>
-                  )}
-                </StyledJobDetails>
-                <StyledMainList>
-                  <div dangerouslySetInnerHTML={{ __html: html }} />
-                </StyledMainList>
-              </StyledTabContent>
-            );
-          })}
+        </StyledTabContentsContainer>
       </StyledTabs>
     </StyledContainer>
   );

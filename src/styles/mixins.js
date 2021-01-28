@@ -163,7 +163,6 @@ const Mixins = {
   sidePadding: css`
     padding: 0 10rem;
     ${Media.tablet`padding: 7rem;`}
-    ${Media.phablet`padding: 5rem;`}
   `,
 
   boxShadow: css`

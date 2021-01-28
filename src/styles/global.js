@@ -8,9 +8,8 @@ const Global = createGlobalStyle`
     box-sizing: border-box;
     width: 100%;
     font-size: 62.5%; /* Sanitize 10px = 1rem! */
-    ${Media.tablet`font-size: 40%;`}
-    ${Media.phablet`font-size: 35%;`}
-    ${Media.phone`font-size: 32.5%;`}
+    ${Media.tablet`font-size: 50%;`}
+    ${Media.phone`font-size: 42.5%;`}
   }
 
   *,

@@ -5,7 +5,7 @@ company: TMA
 range: Nov 2012 - Jun 2016
 url: https://www.tmasolutions.com/
 techs:
-  - JEE
+  - Java
   - EclipseRCP
   - Spring
   - JBOSS
