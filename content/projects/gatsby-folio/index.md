@@ -10,4 +10,4 @@ techs:
   - StyledComponent
 ---
 
-My gatsbyweb template to build my personal folio. Easy to change theme and content.
+My Gatsby web template to build my personal folio. Easy to change theme and content.

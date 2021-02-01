@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import { Theme, Mixins, Section } from '@styles';
+import { Theme, Mixins, Section, Media } from '@styles';
 const { colors, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
@@ -11,9 +11,11 @@ const StyledContainer = styled(Section)`
 const StyledFlexContainer = styled.div`
   ${Mixins.flexBetween};
   align-items: flex-start;
+  ${Media.phone`flex-direction: column;`}
 `;
 const StyledContent = styled.div`
   width: 67%;
+  ${Media.phone`width: 100%;`}
   a {
     ${Mixins.link};
   }
@@ -44,7 +46,10 @@ const Skill = styled.li`
 const StyledPic = styled.div`
   position: relative;
   width: 30%;
+  ${Media.phone`width: 60%;`}
+
   margin-right: 0;
+  ${Media.phone`margin-top: 2rem;`}
   a {
     &:focus {
       outline: 0;

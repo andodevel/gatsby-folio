@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import Icon from '../icon';
 import styled from 'styled-components';
-import { Theme, Mixins, Section } from '@styles';
+import { Theme, Mixins, Section, Media } from '@styles';
 
 const { colors, fonts } = Theme;
 
@@ -16,6 +16,7 @@ const StyledContainer = styled(Section)`
 const StyledContent = styled.div`
   position: relative;
   grid-column: 1 / 8;
+  ${Media.phone`grid-column: 1 / 12;`}
   grid-row: 1 / -1;
 `;
 
@@ -58,9 +59,6 @@ const StyledTechList = styled.ul`
     &:last-of-type {
       margin-right: 0;
     }
-    &:before {
-      content: '#';
-    }
   }
 `;
 
@@ -92,12 +90,14 @@ const StyledProjectsImg = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(80%);
+  ${Media.phone`filter: none;`}
 `;
 
 const StyledImgContainer = styled.a`
   ${Mixins.boxShadow};
   grid-column: 6 / -1;
   grid-row: 1 / -1;
+  ${Media.phone`grid-row: 1 / -2;`}
   position: relative;
   z-index: 1;
   border-radius: ${Theme.borderRadius};
@@ -131,6 +131,7 @@ const StyledImgContainer = styled.a`
 const StyledProject = styled.div`
   display: grid;
   grid-gap: 1rem;
+  ${Media.phone`grid-gap: 0;`}
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   margin-bottom: 10rem;
@@ -140,6 +141,7 @@ const StyledProject = styled.div`
   &:nth-of-type(odd) {
     ${StyledContent} {
       grid-column: 6 / -1;
+      ${Media.phone`grid-column: 2 / -1;`}
       text-align: right;
     }
     ${StyledTechList} {

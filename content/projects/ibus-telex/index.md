@@ -9,4 +9,4 @@ techs:
   - IBUS
 ---
 
-Vietnamese input method for Linux built on top IBUS that get influenced by MacOS simple-telex and existing ibus-bamboo.
+Vietnamese input method for Linux is built on top IBUS that get influenced by MacOS simple-telex and ibus-bamboo.

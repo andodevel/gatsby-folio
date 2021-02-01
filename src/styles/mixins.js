@@ -35,8 +35,6 @@ const Mixins = {
     height: 100vh;
     text-align: center;
     vertical-align: center;
-    ${Media.tablet`text-align: inherit;`}
-    ${Media.tablet`text-align-last: inherit;`}
   `,
 
   outline: css`

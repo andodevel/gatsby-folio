@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import Theme from './theme';
-const { colors, width } = Theme;
+const { colors } = Theme;
 
 const Section = styled.section`
   margin: 0rem auto;
   padding: 0 0 15rem 0;
-  width: ${width.sectionWidth};
-  max-width: ${width.sectionMaxWidth};
+  width: 80%;
+  max-width: 90%;
 
   .heading {
     color: ${colors.sectionHeading};
@@ -20,7 +20,7 @@ const Section = styled.section`
     &:after {
       content: '';
       display: block;
-      width: ${width.sectionWidth};
+      width: 80%;
       height: 0.1rem;
       bottom: -0.3rem;
       left: 10rem;

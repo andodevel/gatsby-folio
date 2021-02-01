@@ -37,13 +37,6 @@ const Theme = {
     indicator: `${Colors.red1}`,
   },
 
-  width: {
-    fullDescription: '60%',
-    maxFullDescription: '80%',
-    sectionWidth: '80%',
-    sectionMaxWidth: '90%',
-  },
-
   fonts: {
     primary: `${Fonts.SourceSansPro}`,
     secondary: `${Fonts.RobotoCondensed}`,

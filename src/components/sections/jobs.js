@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Theme, Mixins, Section } from '@styles';
+import { Theme, Mixins, Section, Media } from '@styles';
 const { colors, fontSizes, fonts } = Theme;
 
 const StyledContainer = styled(Section)`
@@ -11,11 +11,15 @@ const StyledContainer = styled(Section)`
 const StyledTabs = styled.div`
   position: relative;
   display: flex;
+  ${Media.phone`flex-direction: column;`}
   align-items: flex-start;
   width: 100%;
   min-height: 30vh;
   height: 40vh;
-  max-height: 60vh;
+  max-height: 50vh;
+  ${Media.phone`min-height: 50vh;`}
+  ${Media.phone`height: 70vh;`}
+  ${Media.phone`max-height: 80vh;`}
 `;
 
 const StyledTabListContainer = styled.div`
@@ -23,8 +27,14 @@ const StyledTabListContainer = styled.div`
   min-width: 12rem;
   width: 12rem;
   max-width: 12rem;
+  ${Media.phone`min-width: 100%;`}
+  ${Media.phone`width: 100%;`}
+  ${Media.phone`max-width: 100%;`}
   height: 100%;
+  ${Media.phone`height: auto;`}
   overflow: hidden auto;
+  ${Media.phone`margin-bottom: 2rem;`}
+  ${Media.phone`overflow: auto hidden;`}
 `;
 
 const StyledTabList = styled.ul`
@@ -32,12 +42,19 @@ const StyledTabList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
+  ${Media.phone`display: flex;`}
 `;
 
 const StyledTabButton = styled.button`
   ${Mixins.tabButton};
   color: ${props => (props.isActive ? colors.primaryComponentActive : colors.primaryComponent)};
+  padding-left: ${props => (props.isActive ? '1.8rem' : '2rem')};
   font-weight: ${props => (props.isActive ? 600 : 500)};
+  ${Media.phone`padding-left: 1rem;`}
+  ${Media.phone`padding-top: ${props => (props.isActive ? '1.8rem' : '2rem')};`}
+  ${Media.phone`min-width: 9rem;`}
+  ${Media.phone`width: 9rem;`}
+  ${Media.phone`max-width: 9rem;`}
 `;
 
 const StyledHighlight = styled.span`
@@ -45,12 +62,18 @@ const StyledHighlight = styled.span`
   transform: translateY(
     ${props => (props.activeTabId > 0 ? props.activeTabId * Theme.tabHeight : 0)}rem
   );
+  ${Media.phone`top: 0.3rem;`}
+  ${Media.phone`left: 2rem;`}
+  ${Media.phone`transform:  rotate(-90deg) translateY(
+    ${props => (props.activeTabId > 0 ? props.activeTabId * 9 : 0)}rem
+  );`}
 `;
 
 const StyledTabContentsContainer = styled.div`
   padding: 0.2rem 0 0 1rem;
   position: relative;
   flex: 1 1 80%;
+  ${Media.phone`flex-basis: 100%;`}
   height: 100%;
   overflow: hidden auto;
 `;
@@ -113,9 +136,6 @@ const StyledTechList = styled.ul`
     &:last-of-type {
       margin-right: 0;
     }
-    &:before {
-      content: '#';
-    }
   }
 `;
 
@@ -172,7 +192,7 @@ const Jobs = ({ data }) => {
                     <span>{range}</span>
                     <StyledCompany>
                       <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-                        &nbsp;@{company}
+                        &nbsp;{company}
                       </a>
                     </StyledCompany>
                     {techs && (

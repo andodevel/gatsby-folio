@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Theme, Mixins, Section } from '@styles';
-const { colors, width } = Theme;
+import { Theme, Mixins, Section, Media } from '@styles';
+const { colors } = Theme;
 
 const StyledContainer = styled(Section)`
   ${Mixins.centerScreen};
@@ -16,8 +16,10 @@ const StyledHeading = styled.h3`
 const StyledDescription = styled.div`
   line-height: ${Theme.contentLineHeight};
   margin: 3rem 0 0 2rem;
-  width: ${width.fullDescription};
-  max-width: ${width.maxFullDescription};
+  width: 70%;
+  ${Media.phone`width: 80%;`}
+  max-width: 80%;
+  ${Media.phone`max-width: 90%;`}
   a {
     ${Mixins.link};
   }
