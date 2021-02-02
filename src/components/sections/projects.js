@@ -16,7 +16,7 @@ const StyledContainer = styled(Section)`
 const StyledContent = styled.div`
   position: relative;
   grid-column: 1 / 8;
-  ${Media.phone`grid-column: 1 / 12;`}
+  ${Media.phone`grid-column: 1 / 12;`};
   grid-row: 1 / -1;
 `;
 
@@ -32,6 +32,7 @@ const StyledDescription = styled.div`
   padding: 2.5rem;
   background-color: ${colors.secondaryBackground};
   border-radius: ${Theme.borderRadius};
+  opacity: 0.9;
   p {
     margin: 0;
   }
